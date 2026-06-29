@@ -286,7 +286,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const emailPayload = {
         "Full Name": data['name'],
         "Business Email": data['email'],
-        "Mobile Number": data['phone'] || 'Not provided',
         "Company Name": data['company'],
         "Destination Port/Country": data['destination'],
         "Product Category": data['category'] ? data['category'].replace('-', ' ').toUpperCase() : '',
