@@ -1020,7 +1020,7 @@ a {
 
 .industry-card-desc {
   font-size: 0.88rem;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.75);
   margin-bottom: 1.2rem;
   line-height: 1.5;
   display: -webkit-box;
