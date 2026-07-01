@@ -1201,23 +1201,6 @@ a {
   display: flex;
   align-items: flex-start;
   gap: 1.2rem;
-  padding: 1.2rem;
-  border-radius: var(--radius-sm);
-  background: rgba(30, 45, 90, 0.02);
-  border: 1px solid rgba(30, 45, 90, 0.04);
-  transition: var(--transition-smooth);
-}
-
-.contact-method-card:hover {
-  transform: translateX(5px);
-  background: rgba(0, 186, 198, 0.04);
-  border-color: rgba(0, 186, 198, 0.15);
-}
-
-.contact-method-card:hover .method-icon {
-  background: var(--primary-light);
-  color: var(--text-light);
-  border-color: var(--primary-light);
 }
 
 .method-icon {
@@ -1268,40 +1251,23 @@ a {
   line-height: 1.5;
 }
 
-.trade-desk-status {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  background: rgba(0, 186, 198, 0.05);
-  border: 1px solid rgba(0, 186, 198, 0.15);
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
+.compliance-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
   margin-top: auto;
-  align-self: flex-start;
 }
 
-.status-dot {
-  width: 8px;
-  height: 8px;
-  background-color: #25D366; /* WhatsApp active green */
-  border-radius: 50%;
-  display: inline-block;
-  box-shadow: 0 0 8px #25D366;
-  animation: pulse-green 2s infinite;
-}
-
-.status-text {
-  font-size: 0.75rem;
+.badge-item {
+  font-size: 0.72rem;
   font-weight: 700;
   color: var(--primary-dark);
+  background: rgba(30, 45, 90, 0.04);
+  border: 1px solid rgba(30, 45, 90, 0.08);
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-}
-
-@keyframes pulse-green {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(37, 211, 102, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
 
 /* Form Column Styling */
@@ -1603,7 +1569,7 @@ a {
     gap: 3rem;
   }
   
-  .trade-desk-status {
+  .compliance-badges {
     margin-top: 2rem;
   }
 }

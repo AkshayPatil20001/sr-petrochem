@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SR Petrochem | B2B Sourcing Partner & Petrochemical Distributors</title>
-  <meta name="description" content="SR Petrochem is a premier sourcing and distribution partner for White Mineral Oils, Liquid Paraffins, Transformer Oils, Industrial Lubricants, and Petroleum Jellies.">
-  <meta name="keywords" content="SR Petrochem, White Oils, Liquid Paraffin, Transformer Oils, Lubricants, Petroleum Jelly, Petrochemical Distribution">
+  <meta name="description"
+    content="SR Petrochem is a premier sourcing and distribution partner for White Mineral Oils, Liquid Paraffins, Transformer Oils, Industrial Lubricants, and Petroleum Jellies.">
+  <meta name="keywords"
+    content="SR Petrochem, White Oils, Liquid Paraffin, Transformer Oils, Lubricants, Petroleum Jelly, Petrochemical Distribution">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <style>
     /* ===========================
        CSS VARIABLES & RESET
     =========================== */
     :root {
-      --primary:       #1E2D5A;   /* Deep corporate navy */
-      --teal:          #00BAC6;   /* Teal from logo drop */
-      --green:         #8EC63F;   /* Leaf green from logo */
-      --green-dark:    #74A72E;
-      --bg:            #F8FAFC;   /* Off-white page bg */
-      --white:         #FFFFFF;
-      --text-dark:     #0F172A;   /* Near-black headings */
-      --text-body:     #1E293B;   /* Deep slate body */
-      --text-muted:    #475569;
-      --text-light:    #64748B;
-      --border:        rgba(15,23,42,0.07);
-      --shadow-sm:     0 2px 8px rgba(15,23,42,0.05);
-      --shadow-md:     0 8px 24px rgba(15,23,42,0.08);
-      --shadow-lg:     0 20px 48px rgba(15,23,42,0.1);
-      --radius-sm:     6px;
-      --radius-md:     12px;
-      --radius-lg:     20px;
-      --transition:    all 0.3s cubic-bezier(0.4,0,0.2,1);
-      --font-head:     'Outfit', sans-serif;
-      --font-body:     'Inter', sans-serif;
+      --primary: #1E2D5A;
+      /* Deep corporate navy */
+      --teal: #00BAC6;
+      /* Teal from logo drop */
+      --green: #8EC63F;
+      /* Leaf green from logo */
+      --green-dark: #74A72E;
+      --bg: #F8FAFC;
+      /* Off-white page bg */
+      --white: #FFFFFF;
+      --text-dark: #0F172A;
+      /* Near-black headings */
+      --text-body: #1E293B;
+      /* Deep slate body */
+      --text-muted: #475569;
+      --text-light: #64748B;
+      --border: rgba(15, 23, 42, 0.07);
+      --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
+      --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+      --shadow-lg: 0 20px 48px rgba(15, 23, 42, 0.1);
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --font-head: 'Outfit', sans-serif;
+      --font-body: 'Inter', sans-serif;
     }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     html {
       scroll-behavior: smooth;
@@ -51,11 +68,38 @@
       overflow-x: hidden;
     }
 
-    h1,h2,h3,h4,h5,h6 { font-family: var(--font-head); line-height: 1.15; color: var(--text-dark); }
-    a { text-decoration: none; color: inherit; transition: var(--transition); }
-    img { display: block; max-width: 100%; }
-    ul { list-style: none; }
-    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: var(--font-head);
+      line-height: 1.15;
+      color: var(--text-dark);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-family: inherit;
+    }
 
     .container {
       max-width: 1240px;
@@ -79,39 +123,60 @@
       transition: var(--transition);
       white-space: nowrap;
     }
+
     .btn-primary {
       background: var(--primary);
       color: #fff;
-      box-shadow: 0 4px 14px rgba(30,45,90,0.25);
+      box-shadow: 0 4px 14px rgba(30, 45, 90, 0.25);
     }
-    .btn-primary:hover { background: #16224a; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(30,45,90,0.3); }
+
+    .btn-primary:hover {
+      background: #16224a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(30, 45, 90, 0.3);
+    }
+
     .btn-teal {
       background: var(--teal);
       color: #fff;
-      box-shadow: 0 4px 14px rgba(0,186,198,0.3);
+      box-shadow: 0 4px 14px rgba(0, 186, 198, 0.3);
     }
-    .btn-teal:hover { background: #009dab; transform: translateY(-2px); }
+
+    .btn-teal:hover {
+      background: #009dab;
+      transform: translateY(-2px);
+    }
+
     .btn-outline {
       background: transparent;
       color: var(--white);
-      border: 2px solid rgba(255,255,255,0.6);
+      border: 2px solid rgba(255, 255, 255, 0.6);
     }
-    .btn-outline:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: #fff;
+    }
+
     .btn-outline-dark {
       background: transparent;
       color: var(--primary);
       border: 2px solid var(--primary);
     }
-    .btn-outline-dark:hover { background: var(--primary); color: #fff; }
+
+    .btn-outline-dark:hover {
+      background: var(--primary);
+      color: #fff;
+    }
 
     /* ===========================
        SECTION HEADERS
     =========================== */
     .section-badge {
       display: inline-block;
-      background: rgba(0,186,198,0.08);
+      background: rgba(0, 186, 198, 0.08);
       color: var(--teal);
-      border: 1px solid rgba(0,186,198,0.2);
+      border: 1px solid rgba(0, 186, 198, 0.2);
       border-radius: 30px;
       padding: 0.35rem 1.1rem;
       font-size: 0.78rem;
@@ -120,6 +185,7 @@
       text-transform: uppercase;
       margin-bottom: 1rem;
     }
+
     .section-title {
       font-size: clamp(1.8rem, 3vw, 2.6rem);
       font-weight: 800;
@@ -127,33 +193,47 @@
       letter-spacing: -0.02em;
       margin-bottom: 1rem;
     }
+
     .section-desc {
       font-size: 1.05rem;
       color: var(--text-muted);
       max-width: 620px;
     }
-    .section-header { margin-bottom: 3.5rem; }
-    .section-header.centered { text-align: center; }
-    .section-header.centered .section-desc { margin: 0 auto; }
+
+    .section-header {
+      margin-bottom: 3.5rem;
+    }
+
+    .section-header.centered {
+      text-align: center;
+    }
+
+    .section-header.centered .section-desc {
+      margin: 0 auto;
+    }
 
     /* ===========================
        HEADER / NAVBAR
     =========================== */
     .header {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 1000;
-      background: rgba(255,255,255,0.88);
+      background: rgba(255, 255, 255, 0.88);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
       box-shadow: var(--shadow-sm);
       transition: var(--transition);
     }
+
     .header.scrolled {
-      background: rgba(255,255,255,0.97);
-      box-shadow: 0 4px 20px rgba(15,23,42,0.08);
+      background: rgba(255, 255, 255, 0.97);
+      box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
     }
+
     .header-inner {
       display: flex;
       align-items: center;
@@ -170,7 +250,11 @@
       gap: 0.85rem;
       flex-shrink: 0;
     }
-    .logo-brand { line-height: 1; }
+
+    .logo-brand {
+      line-height: 1;
+    }
+
     .logo-name {
       font-family: var(--font-head);
       font-size: 1.15rem;
@@ -178,6 +262,7 @@
       color: var(--primary);
       letter-spacing: 0.04em;
     }
+
     .logo-tag {
       font-size: 0.6rem;
       font-weight: 600;
@@ -187,7 +272,12 @@
     }
 
     /* Nav */
-    .nav { display: flex; align-items: center; gap: 0.25rem; }
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
     .nav-link {
       padding: 0.5rem 0.85rem;
       font-size: 0.9rem;
@@ -196,7 +286,13 @@
       border-radius: var(--radius-sm);
       transition: var(--transition);
     }
-    .nav-link:hover, .nav-link.active { color: var(--teal); background: rgba(0,186,198,0.06); }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--teal);
+      background: rgba(0, 186, 198, 0.06);
+    }
+
     .nav-cta {
       margin-left: 1rem;
       padding: 0.6rem 1.4rem;
@@ -205,9 +301,13 @@
       border-radius: var(--radius-sm);
       font-size: 0.88rem;
       font-weight: 600;
-      box-shadow: 0 4px 12px rgba(30,45,90,0.2);
+      box-shadow: 0 4px 12px rgba(30, 45, 90, 0.2);
     }
-    .nav-cta:hover { background: #16224a; transform: translateY(-1px); }
+
+    .nav-cta:hover {
+      background: #16224a;
+      transform: translateY(-1px);
+    }
 
     /* Hamburger */
     .hamburger {
@@ -217,6 +317,7 @@
       padding: 0.5rem;
       border-radius: var(--radius-sm);
     }
+
     .hamburger span {
       display: block;
       width: 24px;
@@ -225,15 +326,27 @@
       border-radius: 2px;
       transition: var(--transition);
     }
-    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .hamburger.open span:nth-child(2) { opacity: 0; }
-    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .hamburger.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
 
     /* Mobile nav overlay */
     .mobile-nav {
       display: none;
       position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       background: var(--white);
       z-index: 999;
       padding: 6rem 2rem 2rem;
@@ -241,14 +354,23 @@
       gap: 1rem;
       overflow-y: auto;
     }
-    .mobile-nav.open { display: flex; }
+
+    .mobile-nav.open {
+      display: flex;
+    }
+
     .mobile-nav .nav-link {
       font-size: 1.1rem;
       padding: 1rem 1.2rem;
       border-bottom: 1px solid var(--border);
       border-radius: 0;
     }
-    .mobile-nav .nav-cta { margin: 1rem 0 0; text-align: center; justify-content: center; }
+
+    .mobile-nav .nav-cta {
+      margin: 1rem 0 0;
+      text-align: center;
+      justify-content: center;
+    }
 
     /* ===========================
        HERO SECTION
@@ -261,6 +383,7 @@
       padding-top: 85px;
       overflow: hidden;
     }
+
     .hero-bg {
       position: absolute;
       inset: 0;
@@ -269,12 +392,14 @@
       background-position: center;
       z-index: 0;
     }
+
     .hero-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(105deg, rgba(15,23,42,0.88) 0%, rgba(30,45,90,0.75) 55%, rgba(0,186,198,0.2) 100%);
+      background: linear-gradient(105deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 45, 90, 0.75) 55%, rgba(0, 186, 198, 0.2) 100%);
       z-index: 1;
     }
+
     .hero-inner {
       position: relative;
       z-index: 2;
@@ -286,12 +411,13 @@
       gap: 4rem;
       align-items: center;
     }
+
     .hero-badge {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      background: rgba(0,186,198,0.15);
-      border: 1px solid rgba(0,186,198,0.35);
+      background: rgba(0, 186, 198, 0.15);
+      border: 1px solid rgba(0, 186, 198, 0.35);
       color: #7ee8f0;
       border-radius: 30px;
       padding: 0.4rem 1rem;
@@ -301,8 +427,26 @@
       text-transform: uppercase;
       margin-bottom: 1.5rem;
     }
-    .hero-badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); animation: pulse-dot 2s infinite; }
-    @keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    .hero-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--teal);
+      animation: pulse-dot 2s infinite;
+    }
+
+    @keyframes pulse-dot {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: 0.3
+      }
+    }
 
     .hero-title {
       font-size: clamp(2.2rem, 4.5vw, 3.6rem);
@@ -312,34 +456,46 @@
       line-height: 1.1;
       margin-bottom: 1.5rem;
     }
-    .hero-title span { color: var(--teal); }
+
+    .hero-title span {
+      color: var(--teal);
+    }
+
     .hero-desc {
       font-size: 1.1rem;
-      color: rgba(255,255,255,0.78);
+      color: rgba(255, 255, 255, 0.78);
       line-height: 1.7;
       margin-bottom: 2.5rem;
       max-width: 520px;
     }
-    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
 
     .hero-right {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
     }
+
     .hero-stat-cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
     }
+
     .hero-stat-card {
-      background: rgba(255,255,255,0.08);
+      background: rgba(255, 255, 255, 0.08);
       backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,0.14);
+      border: 1px solid rgba(255, 255, 255, 0.14);
       border-radius: var(--radius-md);
       padding: 1.5rem;
       text-align: center;
     }
+
     .hero-stat-card .num {
       font-family: var(--font-head);
       font-size: 2.2rem;
@@ -348,36 +504,49 @@
       line-height: 1;
       margin-bottom: 0.3rem;
     }
+
     .hero-stat-card .lbl {
       font-size: 0.78rem;
-      color: rgba(255,255,255,0.65);
+      color: rgba(255, 255, 255, 0.65);
       font-weight: 500;
       letter-spacing: 0.04em;
       text-transform: uppercase;
     }
+
     .hero-coa-card {
-      background: rgba(255,255,255,0.09);
+      background: rgba(255, 255, 255, 0.09);
       backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,0.14);
+      border: 1px solid rgba(255, 255, 255, 0.14);
       border-radius: var(--radius-md);
       padding: 1.4rem 1.6rem;
       display: flex;
       align-items: center;
       gap: 1.2rem;
     }
+
     .hero-coa-icon {
       width: 46px;
       height: 46px;
       border-radius: 50%;
-      background: rgba(142,198,63,0.2);
+      background: rgba(142, 198, 63, 0.2);
       display: flex;
       align-items: center;
       justify-content: center;
       color: var(--green);
       flex-shrink: 0;
     }
-    .hero-coa-text .title { font-size: 0.9rem; font-weight: 600; color: #fff; margin-bottom: 0.15rem; }
-    .hero-coa-text .sub { font-size: 0.78rem; color: rgba(255,255,255,0.55); }
+
+    .hero-coa-text .title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 0.15rem;
+    }
+
+    .hero-coa-text .sub {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.55);
+    }
 
     /* Slider dots */
     .hero-dots {
@@ -389,14 +558,21 @@
       display: flex;
       gap: 0.5rem;
     }
+
     .hero-dot {
-      width: 8px; height: 8px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
-      background: rgba(255,255,255,0.3);
+      background: rgba(255, 255, 255, 0.3);
       transition: var(--transition);
       cursor: pointer;
     }
-    .hero-dot.active { background: var(--teal); width: 24px; border-radius: 4px; }
+
+    .hero-dot.active {
+      background: var(--teal);
+      width: 24px;
+      border-radius: 4px;
+    }
 
     /* ===========================
        B2B SOURCING PROCESS
@@ -407,6 +583,7 @@
       position: relative;
       z-index: 10;
     }
+
     .process-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -414,6 +591,7 @@
       margin-top: 3.5rem;
       position: relative;
     }
+
     .process-grid::before {
       content: '';
       position: absolute;
@@ -424,6 +602,7 @@
       background: repeating-linear-gradient(to right, rgba(0, 186, 198, 0.25) 0px, rgba(0, 186, 198, 0.25) 8px, transparent 8px, transparent 16px);
       z-index: 1;
     }
+
     .process-card {
       background: var(--white);
       border: 1px solid var(--border);
@@ -438,12 +617,14 @@
       flex-direction: column;
       align-items: center;
     }
+
     .process-card:hover {
       transform: translateY(-8px);
       border-color: rgba(0, 186, 198, 0.3);
       box-shadow: var(--shadow-md);
       background: var(--white);
     }
+
     .process-step-num {
       position: absolute;
       top: 1.5rem;
@@ -454,10 +635,12 @@
       color: rgba(0, 186, 198, 0.15);
       line-height: 1;
     }
+
     .process-card:hover .process-step-num {
       color: var(--teal);
       opacity: 0.3;
     }
+
     .process-icon {
       width: 60px;
       height: 60px;
@@ -472,16 +655,19 @@
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
       transition: var(--transition);
     }
+
     .process-card:hover .process-icon {
       background: var(--teal);
       color: var(--white);
       border-color: var(--teal);
       transform: scale(1.05);
     }
+
     .process-icon svg {
       width: 26px;
       height: 26px;
     }
+
     .process-card-title {
       font-family: var(--font-head);
       font-size: 1.2rem;
@@ -489,6 +675,7 @@
       color: var(--primary);
       margin-bottom: 0.8rem;
     }
+
     .process-card-desc {
       font-size: 0.88rem;
       color: var(--text-muted);
@@ -510,6 +697,7 @@
       gap: 1.5rem;
       margin-bottom: 4rem;
     }
+
     .cat-card {
       background: var(--white);
       border: 2px solid transparent;
@@ -521,26 +709,37 @@
       position: relative;
       overflow: hidden;
     }
+
     .cat-card::before {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 4px;
       background: linear-gradient(90deg, var(--teal), var(--primary));
       transform: scaleX(0);
       transform-origin: left;
       transition: transform 0.35s ease;
     }
-    .cat-card:hover, .cat-card.active {
-      border-color: rgba(0,186,198,0.25);
+
+    .cat-card:hover,
+    .cat-card.active {
+      border-color: rgba(0, 186, 198, 0.25);
       box-shadow: var(--shadow-md);
       transform: translateY(-4px);
     }
-    .cat-card.active::before, .cat-card:hover::before { transform: scaleX(1); }
+
+    .cat-card.active::before,
+    .cat-card:hover::before {
+      transform: scaleX(1);
+    }
+
     .cat-icon {
-      width: 52px; height: 52px;
+      width: 52px;
+      height: 52px;
       border-radius: 12px;
-      background: rgba(0,186,198,0.07);
+      background: rgba(0, 186, 198, 0.07);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -548,11 +747,18 @@
       color: var(--teal);
       transition: var(--transition);
     }
-    .cat-card:hover .cat-icon, .cat-card.active .cat-icon {
+
+    .cat-card:hover .cat-icon,
+    .cat-card.active .cat-icon {
       background: var(--teal);
       color: #fff;
     }
-    .cat-icon svg { width: 26px; height: 26px; }
+
+    .cat-icon svg {
+      width: 26px;
+      height: 26px;
+    }
+
     .cat-name {
       font-family: var(--font-head);
       font-size: 1rem;
@@ -560,11 +766,21 @@
       color: var(--text-dark);
       margin-bottom: 0.4rem;
     }
-    .cat-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; }
+
+    .cat-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
 
     /* Spec panel */
-    .spec-panel { display: none; }
-    .spec-panel.active { display: block; }
+    .spec-panel {
+      display: none;
+    }
+
+    .spec-panel.active {
+      display: block;
+    }
 
     .spec-panel-inner {
       background: var(--white);
@@ -573,6 +789,7 @@
       overflow: hidden;
       border: 1px solid var(--border);
     }
+
     .spec-panel-header {
       background: linear-gradient(135deg, var(--primary) 0%, #0f1c3f 100%);
       padding: 2.5rem 3rem;
@@ -582,12 +799,28 @@
       flex-wrap: wrap;
       gap: 1.5rem;
     }
-    .spec-panel-title { font-size: 1.6rem; font-weight: 800; color: #fff; }
-    .spec-panel-desc { font-size: 0.95rem; color: rgba(255,255,255,0.7); margin-top: 0.4rem; }
-    .spec-badges { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+
+    .spec-panel-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .spec-panel-desc {
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: 0.4rem;
+    }
+
+    .spec-badges {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
     .spec-badge {
-      background: rgba(0,186,198,0.2);
-      border: 1px solid rgba(0,186,198,0.4);
+      background: rgba(0, 186, 198, 0.2);
+      border: 1px solid rgba(0, 186, 198, 0.4);
       color: #7ee8f0;
       padding: 0.3rem 0.8rem;
       border-radius: 20px;
@@ -601,15 +834,25 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 0;
     }
+
     .spec-product {
       padding: 2rem 2.5rem;
       border-bottom: 1px solid var(--border);
       border-right: 1px solid var(--border);
       transition: var(--transition);
     }
-    .spec-product:nth-child(even) { border-right: none; }
-    .spec-product:nth-last-child(-n+2) { border-bottom: none; }
-    .spec-product:hover { background: rgba(0,186,198,0.02); }
+
+    .spec-product:nth-child(even) {
+      border-right: none;
+    }
+
+    .spec-product:nth-last-child(-n+2) {
+      border-bottom: none;
+    }
+
+    .spec-product:hover {
+      background: rgba(0, 186, 198, 0.02);
+    }
 
     .sp-name {
       font-family: var(--font-head);
@@ -621,21 +864,33 @@
       align-items: center;
       gap: 0.6rem;
     }
+
     .sp-grade {
       font-size: 0.72rem;
-      background: rgba(142,198,63,0.1);
+      background: rgba(142, 198, 63, 0.1);
       color: var(--green-dark);
-      border: 1px solid rgba(142,198,63,0.2);
+      border: 1px solid rgba(142, 198, 63, 0.2);
       padding: 0.15rem 0.6rem;
       border-radius: 10px;
       font-weight: 700;
       letter-spacing: 0.03em;
     }
-    .sp-desc { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.2rem; line-height: 1.5; }
 
-    .specs-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
+    .sp-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 1.2rem;
+      line-height: 1.5;
+    }
+
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.83rem;
+    }
+
     .specs-table thead th {
-      background: rgba(15,23,42,0.03);
+      background: rgba(15, 23, 42, 0.03);
       color: var(--text-light);
       font-weight: 700;
       letter-spacing: 0.05em;
@@ -645,16 +900,33 @@
       text-align: left;
       border-bottom: 1px solid var(--border);
     }
+
     .specs-table tbody td {
       padding: 0.6rem 0.8rem;
       border-bottom: 1px solid var(--border);
       color: var(--text-body);
     }
-    .specs-table tbody tr:last-child td { border-bottom: none; }
-    .specs-table tbody tr:nth-child(even) td { background: rgba(248,250,252,0.6); }
-    .specs-table td:last-child { font-weight: 600; color: var(--primary); }
 
-    .sp-actions { display: flex; gap: 0.8rem; margin-top: 1.2rem; flex-wrap: wrap; }
+    .specs-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .specs-table tbody tr:nth-child(even) td {
+      background: rgba(248, 250, 252, 0.6);
+    }
+
+    .specs-table td:last-child {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .sp-actions {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1.2rem;
+      flex-wrap: wrap;
+    }
+
     .btn-sm {
       padding: 0.55rem 1.2rem;
       font-size: 0.83rem;
@@ -665,10 +937,25 @@
       align-items: center;
       gap: 0.4rem;
     }
-    .btn-sm-primary { background: var(--primary); color: #fff; }
-    .btn-sm-primary:hover { background: #16224a; }
-    .btn-sm-outline { border: 1.5px solid var(--border); color: var(--text-muted); }
-    .btn-sm-outline:hover { border-color: var(--teal); color: var(--teal); }
+
+    .btn-sm-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .btn-sm-primary:hover {
+      background: #16224a;
+    }
+
+    .btn-sm-outline {
+      border: 1.5px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    .btn-sm-outline:hover {
+      border-color: var(--teal);
+      color: var(--teal);
+    }
 
     /* ===========================
        ABOUT SECTION
@@ -678,13 +965,18 @@
       background: var(--white);
       border-top: 1px solid var(--border);
     }
+
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 5rem;
       align-items: center;
     }
-    .about-img-wrap { position: relative; }
+
+    .about-img-wrap {
+      position: relative;
+    }
+
     .about-img {
       width: 100%;
       border-radius: var(--radius-lg);
@@ -692,9 +984,11 @@
       height: 480px;
       box-shadow: var(--shadow-lg);
     }
+
     .about-float {
       position: absolute;
-      bottom: -24px; left: -24px;
+      bottom: -24px;
+      left: -24px;
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
@@ -702,31 +996,76 @@
       box-shadow: var(--shadow-md);
       text-align: center;
     }
-    .about-float .big { font-family: var(--font-head); font-size: 2rem; font-weight: 800; color: var(--primary); }
-    .about-float .sm { font-size: 0.72rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.06em; }
 
-    .about-text-wrap { display: flex; flex-direction: column; gap: 1.8rem; }
-    .about-desc { font-size: 1rem; color: var(--text-muted); line-height: 1.75; }
+    .about-float .big {
+      font-family: var(--font-head);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
 
-    .about-values { display: flex; flex-direction: column; gap: 1.4rem; }
+    .about-float .sm {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .about-text-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+
+    .about-desc {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    .about-values {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+
     .value-row {
       display: flex;
       gap: 1rem;
       align-items: flex-start;
     }
+
     .val-icon {
-      width: 42px; height: 42px;
+      width: 42px;
+      height: 42px;
       border-radius: 10px;
-      background: rgba(0,186,198,0.07);
+      background: rgba(0, 186, 198, 0.07);
       color: var(--teal);
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
     }
-    .val-icon svg { width: 20px; height: 20px; }
-    .val-title { font-family: var(--font-head); font-size: 0.95rem; font-weight: 700; color: var(--primary); margin-bottom: 0.2rem; }
-    .val-text { font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; }
+
+    .val-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .val-title {
+      font-family: var(--font-head);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.2rem;
+    }
+
+    .val-text {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
 
     /* ===========================
        INDUSTRIES SECTION
@@ -736,11 +1075,13 @@
       background: var(--bg);
       border-top: 1px solid var(--border);
     }
+
     .industries-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
     }
+
     .ind-card {
       border-radius: var(--radius-md);
       overflow: hidden;
@@ -749,21 +1090,28 @@
       box-shadow: var(--shadow-md);
       cursor: pointer;
     }
+
     .ind-img {
-      width: 100%; height: 100%;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       transition: transform 0.5s ease;
     }
-    .ind-card:hover .ind-img { transform: scale(1.06); }
+
+    .ind-card:hover .ind-img {
+      transform: scale(1.06);
+    }
+
     .ind-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(15,23,42,0.9) 30%, rgba(15,23,42,0.3) 100%);
+      background: linear-gradient(to top, rgba(15, 23, 42, 0.9) 30%, rgba(15, 23, 42, 0.3) 100%);
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       padding: 1.8rem;
     }
+
     .ind-name {
       font-family: var(--font-head);
       font-size: 1.1rem;
@@ -771,12 +1119,18 @@
       color: #fff;
       margin-bottom: 0.4rem;
     }
-    .ind-items { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+    .ind-items {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
     .ind-tag {
       font-size: 0.7rem;
       font-weight: 600;
-      background: rgba(0,186,198,0.25);
-      border: 1px solid rgba(0,186,198,0.4);
+      background: rgba(0, 186, 198, 0.25);
+      border: 1px solid rgba(0, 186, 198, 0.4);
       color: #7ee8f0;
       padding: 0.2rem 0.65rem;
       border-radius: 10px;
@@ -790,12 +1144,14 @@
       background: var(--white);
       border-top: 1px solid var(--border);
     }
+
     .quality-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
       margin-bottom: 4rem;
     }
+
     .q-card {
       background: var(--bg);
       border: 1px solid var(--border);
@@ -803,20 +1159,43 @@
       padding: 2.5rem 2rem;
       transition: var(--transition);
     }
-    .q-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); background: var(--white); }
+
+    .q-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      background: var(--white);
+    }
+
     .q-icon {
-      width: 52px; height: 52px;
+      width: 52px;
+      height: 52px;
       border-radius: 50%;
-      background: rgba(142,198,63,0.1);
+      background: rgba(142, 198, 63, 0.1);
       color: var(--green);
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 1.4rem;
     }
-    .q-icon svg { width: 26px; height: 26px; }
-    .q-title { font-family: var(--font-head); font-size: 1.15rem; font-weight: 700; color: var(--primary); margin-bottom: 0.6rem; }
-    .q-text { font-size: 0.92rem; color: var(--text-muted); line-height: 1.6; }
+
+    .q-icon svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    .q-title {
+      font-family: var(--font-head);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.6rem;
+    }
+
+    .q-text {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
 
     .trust-strip {
       display: flex;
@@ -824,14 +1203,15 @@
       justify-content: center;
       gap: 1rem;
       padding-top: 3rem;
-      border-top: 1px dashed rgba(15,23,42,0.1);
+      border-top: 1px dashed rgba(15, 23, 42, 0.1);
     }
+
     .trust-pill {
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      background: rgba(30,45,90,0.04);
-      border: 1px solid rgba(30,45,90,0.1);
+      background: rgba(30, 45, 90, 0.04);
+      border: 1px solid rgba(30, 45, 90, 0.1);
       border-radius: 30px;
       padding: 0.55rem 1.3rem;
       font-size: 0.8rem;
@@ -840,7 +1220,12 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
-    .trust-pill svg { width: 16px; height: 16px; color: var(--green); }
+
+    .trust-pill svg {
+      width: 16px;
+      height: 16px;
+      color: var(--green);
+    }
 
     /* ===========================
        CONTACT SECTION
@@ -849,6 +1234,7 @@
       padding: 6rem 0;
       background: linear-gradient(135deg, #0f1c3f 0%, #1E2D5A 50%, #0d2238 100%);
     }
+
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1.4fr;
@@ -857,78 +1243,97 @@
     }
 
     /* Info col */
-    .contact-tag { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--teal); margin-bottom: 0.8rem; }
-    .contact-title { font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; color: #fff; margin-bottom: 1rem; }
-    .contact-desc { font-size: 1rem; color: rgba(255,255,255,0.65); line-height: 1.7; margin-bottom: 2.5rem; }
+    .contact-tag {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--teal);
+      margin-bottom: 0.8rem;
+    }
 
-    .contact-methods { display: flex; flex-direction: column; gap: 1.2rem; margin-bottom: 2.5rem; }
+    .contact-title {
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .contact-desc {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.65);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-bottom: 2.5rem;
+    }
+
     .contact-method {
       display: flex;
-      gap: 1.2rem;
+      gap: 1rem;
       align-items: flex-start;
-      padding: 1.2rem;
-      border-radius: var(--radius-sm);
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      transition: var(--transition);
     }
-    .contact-method:hover {
-      transform: translateX(5px);
-      background: rgba(0, 186, 198, 0.06);
-      border-color: rgba(0, 186, 198, 0.2);
-    }
-    .contact-method:hover .cm-icon {
-      background: var(--teal);
-      color: var(--white);
-    }
+
     .cm-icon {
-      width: 44px; height: 44px;
+      width: 44px;
+      height: 44px;
       border-radius: 10px;
-      background: rgba(0,186,198,0.12);
+      background: rgba(0, 186, 198, 0.12);
       color: var(--teal);
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-      transition: var(--transition);
     }
-    .cm-icon svg { width: 20px; height: 20px; }
-    .cm-label { font-size: 0.75rem; font-weight: 600; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.15rem; }
-    .cm-value { font-size: 0.95rem; font-weight: 600; color: #fff; }
-    .cm-value a { color: var(--teal); }
-    .cm-value a:hover { color: #7ee8f0; }
 
-    .trade-desk-status {
-      display: inline-flex;
-      align-items: center;
+    .cm-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .cm-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.15rem;
+    }
+
+    .cm-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .cm-value a {
+      color: var(--teal);
+    }
+
+    .cm-value a:hover {
+      color: #7ee8f0;
+    }
+
+    .cert-badges {
+      display: flex;
+      flex-wrap: wrap;
       gap: 0.6rem;
+    }
+
+    .cert-pill {
       background: rgba(255, 255, 255, 0.06);
       border: 1px solid rgba(255, 255, 255, 0.12);
-      padding: 0.5rem 1rem;
-      border-radius: 30px;
-      margin-top: auto;
-      align-self: flex-start;
-    }
-    .status-dot {
-      width: 8px;
-      height: 8px;
-      background-color: #25D366;
-      border-radius: 50%;
-      display: inline-block;
-      box-shadow: 0 0 8px #25D366;
-      animation: pulse-green 2s infinite;
-    }
-    .status-text {
-      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 0.4rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.74rem;
       font-weight: 700;
-      color: rgba(255, 255, 255, 0.85);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @keyframes pulse-green {
-      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-      70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(37, 211, 102, 0); }
-      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+      letter-spacing: 0.04em;
     }
 
     /* Form col */
@@ -936,8 +1341,9 @@
       background: var(--white);
       border-radius: var(--radius-lg);
       padding: 3rem;
-      box-shadow: 0 32px 80px rgba(0,0,0,0.3);
+      box-shadow: 0 32px 80px rgba(0, 0, 0, 0.3);
     }
+
     .form-box-title {
       font-family: var(--font-head);
       font-size: 1.5rem;
@@ -945,12 +1351,36 @@
       color: var(--text-dark);
       margin-bottom: 0.4rem;
     }
-    .form-box-sub { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 2rem; }
 
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
-    .form-row.single { grid-template-columns: 1fr; }
-    .form-group { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.2rem; }
-    .form-group label { font-size: 0.83rem; font-weight: 600; color: var(--text-body); }
+    .form-box-sub {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+
+    .form-row.single {
+      grid-template-columns: 1fr;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+      font-size: 0.83rem;
+      font-weight: 600;
+      color: var(--text-body);
+    }
+
     .form-group input,
     .form-group select,
     .form-group textarea {
@@ -964,14 +1394,27 @@
       transition: var(--transition);
       outline: none;
     }
+
     .form-group input:focus,
     .form-group select:focus,
     .form-group textarea:focus {
       border-color: var(--teal);
-      box-shadow: 0 0 0 3px rgba(0,186,198,0.08);
+      box-shadow: 0 0 0 3px rgba(0, 186, 198, 0.08);
     }
-    .form-group textarea { resize: vertical; min-height: 100px; }
-    .form-group select { cursor: pointer; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748B'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; background-size: 16px; }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-group select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748B'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      background-size: 16px;
+    }
 
     .btn-submit {
       width: 100%;
@@ -984,35 +1427,67 @@
       font-family: var(--font-head);
       font-weight: 700;
       letter-spacing: 0.02em;
-      box-shadow: 0 6px 20px rgba(30,45,90,0.25);
+      box-shadow: 0 6px 20px rgba(30, 45, 90, 0.25);
       transition: var(--transition);
     }
-    .btn-submit:hover { background: #16224a; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(30,45,90,0.35); }
+
+    .btn-submit:hover {
+      background: #16224a;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(30, 45, 90, 0.35);
+    }
 
     /* Success state */
-    .form-success { display: none; text-align: center; padding: 2rem 0; }
-    .form-success.show { display: block; }
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .form-success.show {
+      display: block;
+    }
+
     .success-check {
-      width: 64px; height: 64px;
+      width: 64px;
+      height: 64px;
       border-radius: 50%;
-      background: rgba(142,198,63,0.1);
+      background: rgba(142, 198, 63, 0.1);
       color: var(--green);
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0 auto 1.2rem;
     }
-    .success-check svg { width: 36px; height: 36px; }
-    .success-title { font-family: var(--font-head); font-size: 1.4rem; font-weight: 800; color: var(--primary); margin-bottom: 0.6rem; }
-    .success-text { font-size: 0.92rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem; }
+
+    .success-check svg {
+      width: 36px;
+      height: 36px;
+    }
+
+    .success-title {
+      font-family: var(--font-head);
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.6rem;
+    }
+
+    .success-text {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
 
     /* ===========================
        FOOTER
     =========================== */
     .footer {
       background: #0a1328;
-      border-top: 1px solid rgba(255,255,255,0.05);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
     }
+
     .footer-main {
       max-width: 1240px;
       margin: 0 auto;
@@ -1021,52 +1496,100 @@
       grid-template-columns: 2fr 1fr 1fr 1.5fr;
       gap: 3rem;
     }
+
     .footer-brand-wrap .footer-tagline {
       font-size: 0.92rem;
-      color: rgba(255,255,255,0.45);
+      color: rgba(255, 255, 255, 0.45);
       line-height: 1.7;
       margin-top: 1.2rem;
       max-width: 280px;
     }
-    .social-row { display: flex; gap: 0.8rem; margin-top: 1.8rem; }
+
+    .social-row {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1.8rem;
+    }
+
     .social-btn {
-      width: 38px; height: 38px;
+      width: 38px;
+      height: 38px;
       border-radius: 8px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.08);
-      color: rgba(255,255,255,0.5);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.5);
       display: flex;
       align-items: center;
       justify-content: center;
       transition: var(--transition);
     }
-    .social-btn:hover { background: var(--teal); border-color: var(--teal); color: #fff; }
-    .social-btn svg { width: 16px; height: 16px; }
+
+    .social-btn:hover {
+      background: var(--teal);
+      border-color: var(--teal);
+      color: #fff;
+    }
+
+    .social-btn svg {
+      width: 16px;
+      height: 16px;
+    }
 
     .footer-col-title {
       font-family: var(--font-head);
       font-size: 0.8rem;
       font-weight: 700;
-      color: rgba(255,255,255,0.35);
+      color: rgba(255, 255, 255, 0.35);
       text-transform: uppercase;
       letter-spacing: 0.1em;
       margin-bottom: 1.4rem;
     }
-    .footer-links { display: flex; flex-direction: column; gap: 0.7rem; }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
     .footer-links a {
       font-size: 0.88rem;
-      color: rgba(255,255,255,0.55);
+      color: rgba(255, 255, 255, 0.55);
       transition: var(--transition);
     }
-    .footer-links a:hover { color: var(--teal); padding-left: 4px; }
 
-    .footer-addr { font-size: 0.86rem; color: rgba(255,255,255,0.5); line-height: 1.8; margin-bottom: 1.2rem; }
-    .footer-addr strong { color: rgba(255,255,255,0.8); display: block; margin-bottom: 0.4rem; }
-    .footer-contact a { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--teal); margin-bottom: 0.5rem; }
-    .footer-contact a:hover { color: #7ee8f0; }
+    .footer-links a:hover {
+      color: var(--teal);
+      padding-left: 4px;
+    }
+
+    .footer-addr {
+      font-size: 0.86rem;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 1.8;
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-addr strong {
+      color: rgba(255, 255, 255, 0.8);
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .footer-contact a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--teal);
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-contact a:hover {
+      color: #7ee8f0;
+    }
 
     .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.05);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
       padding: 1.8rem 2rem;
       max-width: 1240px;
       margin: 0 auto;
@@ -1076,191 +1599,300 @@
       flex-wrap: wrap;
       gap: 1rem;
     }
-    .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.6); }
-    .footer-legal { display: flex; gap: 2rem; }
-    .footer-legal a { font-size: 0.8rem; color: rgba(255,255,255,0.6); }
-    .footer-legal a:hover { color: var(--teal); }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .footer-legal a {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .footer-legal a:hover {
+      color: var(--teal);
+    }
 
     /* ===========================
        RESPONSIVE
     =========================== */
     @media (max-width: 1100px) {
-      .cat-grid { grid-template-columns: repeat(2, 1fr); }
-      .footer-main { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+      .cat-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+      }
     }
 
     @media (max-width: 900px) {
-      .nav { display: none; }
-      .nav-cta.desktop { display: none; }
-      .hamburger { display: flex; }
-      .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
-      .hero-right { display: none; }
-      .about-grid { grid-template-columns: 1fr; }
-      .about-img-wrap { display: none; }
-      .contact-grid { grid-template-columns: 1fr; }
-      .industries-grid { grid-template-columns: repeat(2, 1fr); }
-      .quality-grid { grid-template-columns: repeat(2, 1fr); }
-      .spec-products { grid-template-columns: 1fr; }
-      .spec-product { border-right: none; }
-      .spec-product:nth-last-child(-n+2) { border-bottom: 1px solid var(--border); }
-      .spec-product:last-child { border-bottom: none; }
+      .nav {
+        display: none;
+      }
+
+      .nav-cta.desktop {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .hero-right {
+        display: none;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-img-wrap {
+        display: none;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .quality-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .spec-products {
+        grid-template-columns: 1fr;
+      }
+
+      .spec-product {
+        border-right: none;
+      }
+
+      .spec-product:nth-last-child(-n+2) {
+        border-bottom: 1px solid var(--border);
+      }
+
+      .spec-product:last-child {
+        border-bottom: none;
+      }
+
       .process-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
       }
+
       .process-grid::before {
         display: none;
       }
     }
 
     @media (max-width: 640px) {
-      .header-inner { padding: 0.9rem 1.25rem; }
-      .process-grid { grid-template-columns: 1fr; }
-      .cat-grid { grid-template-columns: 1fr; }
-      .industries-grid { grid-template-columns: 1fr; }
-      .quality-grid { grid-template-columns: 1fr; }
-      .hero-actions { flex-direction: column; }
-      .btn { width: 100%; justify-content: center; }
-      .form-row { grid-template-columns: 1fr; }
-      .form-box { padding: 2rem 1.5rem; }
-      .footer-main { grid-template-columns: 1fr; }
-      .footer-bottom { flex-direction: column; text-align: center; }
-      .spec-panel-header { padding: 1.8rem; }
-      .spec-product { padding: 1.5rem; }
+      .header-inner {
+        padding: 0.9rem 1.25rem;
+      }
 
-    /* ==========================================================================
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cat-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .industries-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quality-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .form-box {
+        padding: 2rem 1.5rem;
+      }
+
+      .footer-main {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .spec-panel-header {
+        padding: 1.8rem;
+      }
+
+      .spec-product {
+        padding: 1.5rem;
+      }
+
+      /* ==========================================================================
        FLOATING WHATSAPP BUSINESS WIDGET
        ========================================================================== */
-    .whatsapp-float-widget {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      z-index: 9999;
-      text-decoration: none;
-      font-family: 'Outfit', 'Inter', sans-serif;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: whatsappEntry 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-      animation-delay: 1.5s;
-    }
-
-    .whatsapp-icon-wrapper {
-      width: 60px;
-      height: 60px;
-      background-color: #25D366;
-      color: #ffffff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4), 
-                  inset 0 -4px 0 rgba(0, 0, 0, 0.15), 
-                  0 0 0 0px rgba(37, 211, 102, 0.4);
-      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-      position: relative;
-      animation: whatsappPulse 2s infinite;
-    }
-
-    .whatsapp-svg {
-      width: 30px;
-      height: 30px;
-      transition: transform 0.3s ease;
-    }
-
-    .whatsapp-badge {
-      background-color: #1E2D5A;
-      color: #ffffff;
-      padding: 8px 16px;
-      border-radius: 30px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      box-shadow: 0 4px 12px rgba(30, 45, 90, 0.15);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      white-space: nowrap;
-      pointer-events: none;
-      opacity: 0.9;
-      transform: translateX(10px);
-      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    }
-
-    /* Hover States */
-    .whatsapp-float-widget:hover .whatsapp-icon-wrapper {
-      background-color: #20ba59;
-      transform: scale(1.08);
-      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5), 
-                  inset 0 -4px 0 rgba(0, 0, 0, 0.15),
-                  0 0 0 10px rgba(37, 211, 102, 0);
-      animation: none;
-    }
-
-    .whatsapp-float-widget:hover .whatsapp-svg {
-      transform: rotate(10deg) scale(1.1);
-    }
-
-    .whatsapp-float-widget:hover .whatsapp-badge {
-      opacity: 1;
-      transform: translateX(0);
-      background-color: #00BAC6;
-      box-shadow: 0 6px 16px rgba(0, 186, 198, 0.3);
-    }
-
-    /* Animations */
-    @keyframes whatsappEntry {
-      0% {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes whatsappPulse {
-      0% {
-        box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4), 
-                    inset 0 -4px 0 rgba(0, 0, 0, 0.15), 
-                    0 0 0 0px rgba(37, 211, 102, 0.5);
-      }
-      50% {
-        box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4), 
-                    inset 0 -4px 0 rgba(0, 0, 0, 0.15), 
-                    0 0 0 15px rgba(37, 211, 102, 0);
-      }
-      100% {
-        box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4), 
-                    inset 0 -4px 0 rgba(0, 0, 0, 0.15), 
-                    0 0 0 0px rgba(37, 211, 102, 0);
-      }
-    }
-
-    /* Responsive Overrides */
-    @media (max-width: 768px) {
       .whatsapp-float-widget {
-        bottom: 20px;
-        right: 20px;
-        gap: 0;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        z-index: 9999;
+        text-decoration: none;
+        font-family: 'Outfit', 'Inter', sans-serif;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: whatsappEntry 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        animation-delay: 1.5s;
       }
-      
+
       .whatsapp-icon-wrapper {
-        width: 55px;
-        height: 55px;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        color: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4),
+          inset 0 -4px 0 rgba(0, 0, 0, 0.15),
+          0 0 0 0px rgba(37, 211, 102, 0.4);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        position: relative;
+        animation: whatsappPulse 2s infinite;
       }
-      
+
       .whatsapp-svg {
-        width: 26px;
-        height: 26px;
+        width: 30px;
+        height: 30px;
+        transition: transform 0.3s ease;
       }
-      
+
       .whatsapp-badge {
-        display: none;
+        background-color: #1E2D5A;
+        color: #ffffff;
+        padding: 8px 16px;
+        border-radius: 30px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        box-shadow: 0 4px 12px rgba(30, 45, 90, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        white-space: nowrap;
+        pointer-events: none;
+        opacity: 0.9;
+        transform: translateX(10px);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
       }
-    }
+
+      /* Hover States */
+      .whatsapp-float-widget:hover .whatsapp-icon-wrapper {
+        background-color: #20ba59;
+        transform: scale(1.08);
+        box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5),
+          inset 0 -4px 0 rgba(0, 0, 0, 0.15),
+          0 0 0 10px rgba(37, 211, 102, 0);
+        animation: none;
+      }
+
+      .whatsapp-float-widget:hover .whatsapp-svg {
+        transform: rotate(10deg) scale(1.1);
+      }
+
+      .whatsapp-float-widget:hover .whatsapp-badge {
+        opacity: 1;
+        transform: translateX(0);
+        background-color: #00BAC6;
+        box-shadow: 0 6px 16px rgba(0, 186, 198, 0.3);
+      }
+
+      /* Animations */
+      @keyframes whatsappEntry {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes whatsappPulse {
+        0% {
+          box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4),
+            inset 0 -4px 0 rgba(0, 0, 0, 0.15),
+            0 0 0 0px rgba(37, 211, 102, 0.5);
+        }
+
+        50% {
+          box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4),
+            inset 0 -4px 0 rgba(0, 0, 0, 0.15),
+            0 0 0 15px rgba(37, 211, 102, 0);
+        }
+
+        100% {
+          box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4),
+            inset 0 -4px 0 rgba(0, 0, 0, 0.15),
+            0 0 0 0px rgba(37, 211, 102, 0);
+        }
+      }
+
+      /* Responsive Overrides */
+      @media (max-width: 768px) {
+        .whatsapp-float-widget {
+          bottom: 20px;
+          right: 20px;
+          gap: 0;
+        }
+
+        .whatsapp-icon-wrapper {
+          width: 55px;
+          height: 55px;
+        }
+
+        .whatsapp-svg {
+          width: 26px;
+          height: 26px;
+        }
+
+        .whatsapp-badge {
+          display: none;
+        }
+      }
   </style>
 </head>
+
 <body>
 
   <!-- ========== HEADER ========== -->
@@ -1272,20 +1904,22 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="44" height="44" aria-hidden="true">
           <defs>
             <linearGradient id="lg-drop" x1="100%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#00BAC6"/>
-              <stop offset="100%" stop-color="#1E2D5A"/>
+              <stop offset="0%" stop-color="#00BAC6" />
+              <stop offset="100%" stop-color="#1E2D5A" />
             </linearGradient>
             <linearGradient id="lg-leaf" x1="100%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#A5DB3C"/>
-              <stop offset="100%" stop-color="#8EC63F"/>
+              <stop offset="0%" stop-color="#A5DB3C" />
+              <stop offset="100%" stop-color="#8EC63F" />
             </linearGradient>
           </defs>
-          <path d="M 100,30 C 112,45 160,95 160,135 A 60,60 0 0,1 40,135 C 40,95 88,45 100,30 Z" fill="url(#lg-drop)"/>
-          <path d="M 54,115 C 49,130 52,150 72,166" stroke="white" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.9"/>
-          <polygon points="100,30 112,30 87,110 117,130 95,185 85,185 105,130 75,110" fill="white"/>
-          <path d="M 106,95 C 92,70 120,30 165,20 C 158,55 135,88 106,95 Z" fill="white" stroke="white" stroke-width="8" stroke-linejoin="round"/>
-          <path d="M 106,95 C 92,70 120,30 165,20 C 158,55 135,88 106,95 Z" fill="url(#lg-leaf)"/>
-          <path d="M 106,95 Q 130,60 165,20" stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+          <path d="M 100,30 C 112,45 160,95 160,135 A 60,60 0 0,1 40,135 C 40,95 88,45 100,30 Z" fill="url(#lg-drop)" />
+          <path d="M 54,115 C 49,130 52,150 72,166" stroke="white" stroke-width="5" stroke-linecap="round" fill="none"
+            opacity="0.9" />
+          <polygon points="100,30 112,30 87,110 117,130 95,185 85,185 105,130 75,110" fill="white" />
+          <path d="M 106,95 C 92,70 120,30 165,20 C 158,55 135,88 106,95 Z" fill="white" stroke="white" stroke-width="8"
+            stroke-linejoin="round" />
+          <path d="M 106,95 C 92,70 120,30 165,20 C 158,55 135,88 106,95 Z" fill="url(#lg-leaf)" />
+          <path d="M 106,95 Q 130,60 165,20" stroke="white" stroke-width="4" stroke-linecap="round" fill="none" />
         </svg>
         <div class="logo-brand">
           <div class="logo-name">SR PETROCHEM</div>
@@ -1333,12 +1967,17 @@
         </div>
         <h1 class="hero-title animate-up">Petrochemical Sourcing &amp; Distribution</h1>
         <p class="hero-desc animate-up">
-          SR Petrochem connects manufacturers with premium-grade refined white oils, transformer insulating fluids, industrial lubricants, and petroleum jellies — fully certified, technically audited, and bulk-dispatched.
+          SR Petrochem connects manufacturers with premium-grade refined white oils, transformer insulating fluids,
+          industrial lubricants, and petroleum jellies — fully certified, technically audited, and bulk-dispatched.
         </p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-teal" id="hero-cta-primary">
             Request a Bulk Quote
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor"
+              stroke-width="2.5" viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
           </a>
           <a href="#products" class="btn btn-outline" id="hero-cta-secondary">Explore Catalog</a>
         </div>
@@ -1365,7 +2004,11 @@
         </div>
         <div class="hero-coa-card">
           <div class="hero-coa-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor"
+              stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
           </div>
           <div class="hero-coa-text">
             <div class="title">ISO 9001 | USP/BP/IP | IEC 60296 | REACH</div>
@@ -1388,7 +2031,8 @@
       <div class="section-header centered">
         <div class="section-badge">How We Partner</div>
         <h2 class="section-title">Our Streamlined B2B Sourcing Process</h2>
-        <p class="section-desc">From initial specification sheet alignment to accredited batch testing and doorstep dispatch, we manage every step with strict technical auditing.</p>
+        <p class="section-desc">From initial specification sheet alignment to accredited batch testing and doorstep
+          dispatch, we manage every step with strict technical auditing.</p>
       </div>
 
       <div class="process-grid">
@@ -1396,49 +2040,62 @@
         <div class="process-card">
           <div class="process-step-num">01</div>
           <div class="process-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
           </div>
           <h3 class="process-card-title">Spec Alignment</h3>
-          <p class="process-card-desc">We align product specs directly with your technical requirements (viscosity, pour points, purity parameters).</p>
+          <p class="process-card-desc">We align product specs directly with your technical requirements (viscosity, pour
+            points, purity parameters).</p>
         </div>
 
         <!-- Step 2 -->
         <div class="process-card">
           <div class="process-step-num">02</div>
           <div class="process-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 9.172V5L8 4z" />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 9.172V5L8 4z" />
             </svg>
           </div>
           <h3 class="process-card-title">Batch QA Testing</h3>
-          <p class="process-card-desc">Samples are tested in certified laboratories. Every bulk delivery is accompanied by an official COA.</p>
+          <p class="process-card-desc">Samples are tested in certified laboratories. Every bulk delivery is accompanied
+            by an official COA.</p>
         </div>
 
         <!-- Step 3 -->
         <div class="process-card">
           <div class="process-step-num">03</div>
           <div class="process-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
             </svg>
           </div>
           <h3 class="process-card-title">Packaging &amp; Loading</h3>
-          <p class="process-card-desc">Product is loaded into customized bulk packaging: Flexibags, ISO Tanks, or standard steel Barrels.</p>
+          <p class="process-card-desc">Product is loaded into customized bulk packaging: Flexibags, ISO Tanks, or
+            standard steel Barrels.</p>
         </div>
 
         <!-- Step 4 -->
         <div class="process-card">
           <div class="process-step-num">04</div>
           <div class="process-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10M13 8h7a1 1 0 011 1v5M21 14h-8" />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10M13 8h7a1 1 0 011 1v5M21 14h-8" />
             </svg>
           </div>
           <h3 class="process-card-title">Secure Delivery</h3>
-          <p class="process-card-desc">Our logistics team handles door-to-door surface freight or domestic port terminal coordination seamlessly.</p>
+          <p class="process-card-desc">Our logistics team handles door-to-door surface freight or domestic port terminal
+            coordination seamlessly.</p>
         </div>
       </div>
     </div>
@@ -1450,35 +2107,56 @@
       <div class="section-header">
         <div class="section-badge">Our Business Verticals</div>
         <h2 class="section-title">4 Core Product Categories</h2>
-        <p class="section-desc">Premium-grade petrochemical products sourced from certified refineries, tested in-house, and distributed at industrial scale.</p>
+        <p class="section-desc">Premium-grade petrochemical products sourced from certified refineries, tested in-house,
+          and distributed at industrial scale.</p>
       </div>
 
       <!-- Category Selector Grid -->
       <div class="cat-grid" role="tablist" aria-label="Product categories">
-        <div class="cat-card active" role="tab" aria-selected="true" aria-controls="spec-white-oils" id="cat-white-oils" data-cat="white-oils" tabindex="0">
+        <div class="cat-card active" role="tab" aria-selected="true" aria-controls="spec-white-oils" id="cat-white-oils"
+          data-cat="white-oils" tabindex="0">
           <div class="cat-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 9.172V5L8 4z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 9.172V5L8 4z" />
+            </svg>
           </div>
           <div class="cat-name">White Mineral Oils &amp; Liquid Paraffins</div>
           <div class="cat-desc">USP / BP / IP pharmaceutical and cosmetic grade sourcing</div>
         </div>
-        <div class="cat-card" role="tab" aria-selected="false" aria-controls="spec-transformer" id="cat-transformer" data-cat="transformer" tabindex="0">
+        <div class="cat-card" role="tab" aria-selected="false" aria-controls="spec-transformer" id="cat-transformer"
+          data-cat="transformer" tabindex="0">
           <div class="cat-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+            </svg>
           </div>
           <div class="cat-name">Transformer &amp; Insulating Oils</div>
           <div class="cat-desc">IEC 60296 Inhibited &amp; Uninhibited dielectric grade sourcing</div>
         </div>
-        <div class="cat-card" role="tab" aria-selected="false" aria-controls="spec-lubricants" id="cat-lubricants" data-cat="lubricants" tabindex="0">
+        <div class="cat-card" role="tab" aria-selected="false" aria-controls="spec-lubricants" id="cat-lubricants"
+          data-cat="lubricants" tabindex="0">
           <div class="cat-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+            </svg>
           </div>
           <div class="cat-name">Industrial &amp; Automotive Lubricants</div>
           <div class="cat-desc">Hydraulic, Gear &amp; Engine Oil formulations</div>
         </div>
-        <div class="cat-card" role="tab" aria-selected="false" aria-controls="spec-jellies" id="cat-jellies" data-cat="jellies" tabindex="0">
+        <div class="cat-card" role="tab" aria-selected="false" aria-controls="spec-jellies" id="cat-jellies"
+          data-cat="jellies" tabindex="0">
           <div class="cat-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+            </svg>
           </div>
           <div class="cat-name">Petroleum Jellies</div>
           <div class="cat-desc">White &amp; Yellow commercial and pharma grade sourcing</div>
@@ -1492,7 +2170,8 @@
           <div class="spec-panel-header">
             <div>
               <div class="spec-panel-title">White Mineral Oils &amp; Liquid Paraffins</div>
-              <div class="spec-panel-desc">High-purity refined white mineral oils for pharmaceutical, cosmetic, and food-grade industrial applications</div>
+              <div class="spec-panel-desc">High-purity refined white mineral oils for pharmaceutical, cosmetic, and
+                food-grade industrial applications</div>
             </div>
             <div class="spec-badges">
               <span class="spec-badge">USP / NF</span>
@@ -1504,13 +2183,34 @@
           <div class="spec-products">
             <div class="spec-product">
               <div class="sp-name">Liquid Paraffin Heavy <span class="sp-grade">IP/BP/USP</span></div>
-              <div class="sp-desc">High-viscosity refined mineral oil for pharmaceutical ointments, cosmetic formulations, and polymer lubricants.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>Kinematic Viscosity @ 40°C</td><td>64.0 – 70.0 cSt</td></tr>
-                <tr><td>Flash Point (COC)</td><td>Min. 220°C</td></tr>
-                <tr><td>Pour Point</td><td>Max. −12°C</td></tr>
-                <tr><td>Appearance</td><td>Clear, Colorless &amp; Odorless</td></tr>
-              </tbody></table>
+              <div class="sp-desc">High-viscosity refined mineral oil for pharmaceutical ointments, cosmetic
+                formulations, and polymer lubricants.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kinematic Viscosity @ 40°C</td>
+                    <td>64.0 – 70.0 cSt</td>
+                  </tr>
+                  <tr>
+                    <td>Flash Point (COC)</td>
+                    <td>Min. 220°C</td>
+                  </tr>
+                  <tr>
+                    <td>Pour Point</td>
+                    <td>Max. −12°C</td>
+                  </tr>
+                  <tr>
+                    <td>Appearance</td>
+                    <td>Clear, Colorless &amp; Odorless</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1518,13 +2218,34 @@
             </div>
             <div class="spec-product">
               <div class="sp-name">Liquid Paraffin Light <span class="sp-grade">USP/NF</span></div>
-              <div class="sp-desc">Low-viscosity white mineral oil for baby care, excipients, and softgel shell lubricants.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>Kinematic Viscosity @ 40°C</td><td>14.0 – 17.5 cSt</td></tr>
-                <tr><td>Flash Point (COC)</td><td>Min. 185°C</td></tr>
-                <tr><td>Pour Point</td><td>Max. −15°C</td></tr>
-                <tr><td>Specific Gravity @ 25°C</td><td>0.818 – 0.880</td></tr>
-              </tbody></table>
+              <div class="sp-desc">Low-viscosity white mineral oil for baby care, excipients, and softgel shell
+                lubricants.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kinematic Viscosity @ 40°C</td>
+                    <td>14.0 – 17.5 cSt</td>
+                  </tr>
+                  <tr>
+                    <td>Flash Point (COC)</td>
+                    <td>Min. 185°C</td>
+                  </tr>
+                  <tr>
+                    <td>Pour Point</td>
+                    <td>Max. −15°C</td>
+                  </tr>
+                  <tr>
+                    <td>Specific Gravity @ 25°C</td>
+                    <td>0.818 – 0.880</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1532,13 +2253,34 @@
             </div>
             <div class="spec-product">
               <div class="sp-name">Mineral Oil USP <span class="sp-grade">USP Grade</span></div>
-              <div class="sp-desc">Ultra-pure white mineral oil meeting USP/NF monograph for pharmaceutical and nutraceutical use.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>Kinematic Viscosity @ 40°C</td><td>38.0 – 42.0 cSt</td></tr>
-                <tr><td>Ultraviolet Absorbance</td><td>NMT 0.1 (at 280nm)</td></tr>
-                <tr><td>Solid Paraffins Test</td><td>Passes USP Test</td></tr>
-                <tr><td>Sulphur Content</td><td>NMT 5 ppm</td></tr>
-              </tbody></table>
+              <div class="sp-desc">Ultra-pure white mineral oil meeting USP/NF monograph for pharmaceutical and
+                nutraceutical use.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kinematic Viscosity @ 40°C</td>
+                    <td>38.0 – 42.0 cSt</td>
+                  </tr>
+                  <tr>
+                    <td>Ultraviolet Absorbance</td>
+                    <td>NMT 0.1 (at 280nm)</td>
+                  </tr>
+                  <tr>
+                    <td>Solid Paraffins Test</td>
+                    <td>Passes USP Test</td>
+                  </tr>
+                  <tr>
+                    <td>Sulphur Content</td>
+                    <td>NMT 5 ppm</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1546,13 +2288,34 @@
             </div>
             <div class="spec-product">
               <div class="sp-name">Mineral Oil BP/IP <span class="sp-grade">BP/IP</span></div>
-              <div class="sp-desc">British and Indian Pharmacopoeia compliant mineral oil for regulated pharmaceutical manufacturing.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>Kinematic Viscosity @ 40°C</td><td>25.0 – 80.0 cSt</td></tr>
-                <tr><td>Acid Value</td><td>NMT 0.1 mg KOH/g</td></tr>
-                <tr><td>Carbonisable Substances</td><td>Passes BP Test</td></tr>
-                <tr><td>Colour (Saybolt)</td><td>NLT +30</td></tr>
-              </tbody></table>
+              <div class="sp-desc">British and Indian Pharmacopoeia compliant mineral oil for regulated pharmaceutical
+                manufacturing.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kinematic Viscosity @ 40°C</td>
+                    <td>25.0 – 80.0 cSt</td>
+                  </tr>
+                  <tr>
+                    <td>Acid Value</td>
+                    <td>NMT 0.1 mg KOH/g</td>
+                  </tr>
+                  <tr>
+                    <td>Carbonisable Substances</td>
+                    <td>Passes BP Test</td>
+                  </tr>
+                  <tr>
+                    <td>Colour (Saybolt)</td>
+                    <td>NLT +30</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1568,7 +2331,8 @@
           <div class="spec-panel-header">
             <div>
               <div class="spec-panel-title">Transformer &amp; Insulating Oils</div>
-              <div class="spec-panel-desc">High dielectric strength insulating fluids for power transformers, switchgear, and HV electrical equipment</div>
+              <div class="spec-panel-desc">High dielectric strength insulating fluids for power transformers,
+                switchgear, and HV electrical equipment</div>
             </div>
             <div class="spec-badges">
               <span class="spec-badge">IEC 60296</span>
@@ -1580,13 +2344,34 @@
           <div class="spec-products">
             <div class="spec-product">
               <div class="sp-name">Inhibited Transformer Oil <span class="sp-grade">IEC 60296</span></div>
-              <div class="sp-desc">DBPC-inhibited insulating oil offering superior oxidation resistance for long-life transformers.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>Kinematic Viscosity @ 40°C</td><td>Max. 11 cSt</td></tr>
-                <tr><td>Flash Point (COC)</td><td>Min. 135°C</td></tr>
-                <tr><td>Dielectric Strength (BDV)</td><td>Min. 70 kV (new)</td></tr>
-                <tr><td>Inhibitor (DBPC) Content</td><td>0.08 – 0.40 % m/m</td></tr>
-              </tbody></table>
+              <div class="sp-desc">DBPC-inhibited insulating oil offering superior oxidation resistance for long-life
+                transformers.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kinematic Viscosity @ 40°C</td>
+                    <td>Max. 11 cSt</td>
+                  </tr>
+                  <tr>
+                    <td>Flash Point (COC)</td>
+                    <td>Min. 135°C</td>
+                  </tr>
+                  <tr>
+                    <td>Dielectric Strength (BDV)</td>
+                    <td>Min. 70 kV (new)</td>
+                  </tr>
+                  <tr>
+                    <td>Inhibitor (DBPC) Content</td>
+                    <td>0.08 – 0.40 % m/m</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1594,13 +2379,34 @@
             </div>
             <div class="spec-product">
               <div class="sp-name">Uninhibited Insulating Oil <span class="sp-grade">IS 335</span></div>
-              <div class="sp-desc">High-purity uninhibited naphthenic base oil for distribution transformers and medium-voltage switchgear.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>Kinematic Viscosity @ 40°C</td><td>Max. 12 cSt</td></tr>
-                <tr><td>Flash Point (COC)</td><td>Min. 135°C</td></tr>
-                <tr><td>Dielectric Strength (BDV)</td><td>Min. 60 kV</td></tr>
-                <tr><td>Water Content</td><td>Max. 30 mg/kg</td></tr>
-              </tbody></table>
+              <div class="sp-desc">High-purity uninhibited naphthenic base oil for distribution transformers and
+                medium-voltage switchgear.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kinematic Viscosity @ 40°C</td>
+                    <td>Max. 12 cSt</td>
+                  </tr>
+                  <tr>
+                    <td>Flash Point (COC)</td>
+                    <td>Min. 135°C</td>
+                  </tr>
+                  <tr>
+                    <td>Dielectric Strength (BDV)</td>
+                    <td>Min. 60 kV</td>
+                  </tr>
+                  <tr>
+                    <td>Water Content</td>
+                    <td>Max. 30 mg/kg</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1608,13 +2414,34 @@
             </div>
             <div class="spec-product">
               <div class="sp-name">EHV Grade Insulating Oil <span class="sp-grade">500kV+</span></div>
-              <div class="sp-desc">Ultra-low aromatic insulating fluid for extra-high voltage (EHV) and ultra-high voltage power grids.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>Dielectric Strength (BDV)</td><td>Min. 80 kV</td></tr>
-                <tr><td>Dielectric Loss Factor (tan δ)</td><td>Max. 0.001 @ 90°C</td></tr>
-                <tr><td>Interfacial Tension</td><td>Min. 40 mN/m</td></tr>
-                <tr><td>Total Acidity</td><td>Max. 0.01 mg KOH/g</td></tr>
-              </tbody></table>
+              <div class="sp-desc">Ultra-low aromatic insulating fluid for extra-high voltage (EHV) and ultra-high
+                voltage power grids.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Dielectric Strength (BDV)</td>
+                    <td>Min. 80 kV</td>
+                  </tr>
+                  <tr>
+                    <td>Dielectric Loss Factor (tan δ)</td>
+                    <td>Max. 0.001 @ 90°C</td>
+                  </tr>
+                  <tr>
+                    <td>Interfacial Tension</td>
+                    <td>Min. 40 mN/m</td>
+                  </tr>
+                  <tr>
+                    <td>Total Acidity</td>
+                    <td>Max. 0.01 mg KOH/g</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1622,13 +2449,34 @@
             </div>
             <div class="spec-product">
               <div class="sp-name">High Flash Point Fluid <span class="sp-grade">Fire Safe</span></div>
-              <div class="sp-desc">High flash point dielectric fluid for fire-risk environments like indoor substations and mines.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>Flash Point (COC)</td><td>Min. 300°C</td></tr>
-                <tr><td>Fire Point</td><td>Min. 340°C</td></tr>
-                <tr><td>Dielectric Strength (BDV)</td><td>Min. 65 kV</td></tr>
-                <tr><td>Viscosity @ 40°C</td><td>28 – 38 cSt</td></tr>
-              </tbody></table>
+              <div class="sp-desc">High flash point dielectric fluid for fire-risk environments like indoor substations
+                and mines.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Flash Point (COC)</td>
+                    <td>Min. 300°C</td>
+                  </tr>
+                  <tr>
+                    <td>Fire Point</td>
+                    <td>Min. 340°C</td>
+                  </tr>
+                  <tr>
+                    <td>Dielectric Strength (BDV)</td>
+                    <td>Min. 65 kV</td>
+                  </tr>
+                  <tr>
+                    <td>Viscosity @ 40°C</td>
+                    <td>28 – 38 cSt</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1644,7 +2492,8 @@
           <div class="spec-panel-header">
             <div>
               <div class="spec-panel-title">Industrial &amp; Automotive Lubricants</div>
-              <div class="spec-panel-desc">Premium mineral and semi-synthetic lubricating oils for heavy machinery, fleet operations, and manufacturing plants</div>
+              <div class="spec-panel-desc">Premium mineral and semi-synthetic lubricating oils for heavy machinery,
+                fleet operations, and manufacturing plants</div>
             </div>
             <div class="spec-badges">
               <span class="spec-badge">ISO VG</span>
@@ -1656,13 +2505,34 @@
           <div class="spec-products">
             <div class="spec-product">
               <div class="sp-name">Industrial Hydraulic Oil <span class="sp-grade">ISO VG 46/68</span></div>
-              <div class="sp-desc">Anti-wear hydraulic fluid for industrial machinery, presses, injection moulding, and fork-lift systems.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>Kinematic Viscosity @ 40°C</td><td>46 cSt (ISO VG 46)</td></tr>
-                <tr><td>Viscosity Index</td><td>NLT 95</td></tr>
-                <tr><td>Flash Point (COC)</td><td>Min. 210°C</td></tr>
-                <tr><td>Pour Point</td><td>Max. −15°C</td></tr>
-              </tbody></table>
+              <div class="sp-desc">Anti-wear hydraulic fluid for industrial machinery, presses, injection moulding, and
+                fork-lift systems.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kinematic Viscosity @ 40°C</td>
+                    <td>46 cSt (ISO VG 46)</td>
+                  </tr>
+                  <tr>
+                    <td>Viscosity Index</td>
+                    <td>NLT 95</td>
+                  </tr>
+                  <tr>
+                    <td>Flash Point (COC)</td>
+                    <td>Min. 210°C</td>
+                  </tr>
+                  <tr>
+                    <td>Pour Point</td>
+                    <td>Max. −15°C</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1670,13 +2540,34 @@
             </div>
             <div class="spec-product">
               <div class="sp-name">Heavy Duty Gear Oil <span class="sp-grade">ISO VG 220</span></div>
-              <div class="sp-desc">EP gear oil for industrial gearboxes, worm gears, and steel mill equipment under high contact pressures.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>Kinematic Viscosity @ 40°C</td><td>220 cSt</td></tr>
-                <tr><td>Timken Load (OK Load)</td><td>NLT 40 lbs</td></tr>
-                <tr><td>Flash Point (COC)</td><td>Min. 220°C</td></tr>
-                <tr><td>Extreme Pressure Performance</td><td>GL-4 / GL-5</td></tr>
-              </tbody></table>
+              <div class="sp-desc">EP gear oil for industrial gearboxes, worm gears, and steel mill equipment under high
+                contact pressures.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kinematic Viscosity @ 40°C</td>
+                    <td>220 cSt</td>
+                  </tr>
+                  <tr>
+                    <td>Timken Load (OK Load)</td>
+                    <td>NLT 40 lbs</td>
+                  </tr>
+                  <tr>
+                    <td>Flash Point (COC)</td>
+                    <td>Min. 220°C</td>
+                  </tr>
+                  <tr>
+                    <td>Extreme Pressure Performance</td>
+                    <td>GL-4 / GL-5</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1684,13 +2575,34 @@
             </div>
             <div class="spec-product">
               <div class="sp-name">Automotive Engine Oil <span class="sp-grade">API SN/CF</span></div>
-              <div class="sp-desc">Premium mineral engine oil for petrol and diesel passenger vehicles and commercial fleet maintenance.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>SAE Viscosity Grade</td><td>20W-50 / 15W-40</td></tr>
-                <tr><td>API Service Category</td><td>SN / CF</td></tr>
-                <tr><td>Total Base Number (TBN)</td><td>NLT 9 mg KOH/g</td></tr>
-                <tr><td>Phosphorus Content</td><td>Max. 0.08 % m/m</td></tr>
-              </tbody></table>
+              <div class="sp-desc">Premium mineral engine oil for petrol and diesel passenger vehicles and commercial
+                fleet maintenance.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>SAE Viscosity Grade</td>
+                    <td>20W-50 / 15W-40</td>
+                  </tr>
+                  <tr>
+                    <td>API Service Category</td>
+                    <td>SN / CF</td>
+                  </tr>
+                  <tr>
+                    <td>Total Base Number (TBN)</td>
+                    <td>NLT 9 mg KOH/g</td>
+                  </tr>
+                  <tr>
+                    <td>Phosphorus Content</td>
+                    <td>Max. 0.08 % m/m</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1698,13 +2610,34 @@
             </div>
             <div class="spec-product">
               <div class="sp-name">Specialty Process Oil <span class="sp-grade">Naphthenic</span></div>
-              <div class="sp-desc">Naphthenic process oil for rubber compounding, tyre manufacturing, printing ink, and plasticizer applications.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>Kinematic Viscosity @ 40°C</td><td>95 – 105 cSt</td></tr>
-                <tr><td>Aniline Point</td><td>70 – 80°C</td></tr>
-                <tr><td>Flash Point (COC)</td><td>Min. 200°C</td></tr>
-                <tr><td>Carbon Type (CN)</td><td>Min. 35 % naphthenic</td></tr>
-              </tbody></table>
+              <div class="sp-desc">Naphthenic process oil for rubber compounding, tyre manufacturing, printing ink, and
+                plasticizer applications.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kinematic Viscosity @ 40°C</td>
+                    <td>95 – 105 cSt</td>
+                  </tr>
+                  <tr>
+                    <td>Aniline Point</td>
+                    <td>70 – 80°C</td>
+                  </tr>
+                  <tr>
+                    <td>Flash Point (COC)</td>
+                    <td>Min. 200°C</td>
+                  </tr>
+                  <tr>
+                    <td>Carbon Type (CN)</td>
+                    <td>Min. 35 % naphthenic</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1720,7 +2653,8 @@
           <div class="spec-panel-header">
             <div>
               <div class="spec-panel-title">Petroleum Jellies</div>
-              <div class="spec-panel-desc">Pharmaceutical and commercial grade white and yellow petroleum jellies for diverse industrial and healthcare applications</div>
+              <div class="spec-panel-desc">Pharmaceutical and commercial grade white and yellow petroleum jellies for
+                diverse industrial and healthcare applications</div>
             </div>
             <div class="spec-badges">
               <span class="spec-badge">USP / NF</span>
@@ -1732,13 +2666,34 @@
           <div class="spec-products">
             <div class="spec-product">
               <div class="sp-name">White Petroleum Jelly <span class="sp-grade">Pharma Grade</span></div>
-              <div class="sp-desc">Highly refined white petrolatum for ointment bases, wound care, lip balm, and cosmetic protectives.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>Melting Point</td><td>38°C – 60°C</td></tr>
-                <tr><td>Colour (Lovibond)</td><td>NMT 0.5 yellow</td></tr>
-                <tr><td>Mineral Acids / Alkalis</td><td>Absent</td></tr>
-                <tr><td>Appearance</td><td>Snow white, homogeneous</td></tr>
-              </tbody></table>
+              <div class="sp-desc">Highly refined white petrolatum for ointment bases, wound care, lip balm, and
+                cosmetic protectives.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Melting Point</td>
+                    <td>38°C – 60°C</td>
+                  </tr>
+                  <tr>
+                    <td>Colour (Lovibond)</td>
+                    <td>NMT 0.5 yellow</td>
+                  </tr>
+                  <tr>
+                    <td>Mineral Acids / Alkalis</td>
+                    <td>Absent</td>
+                  </tr>
+                  <tr>
+                    <td>Appearance</td>
+                    <td>Snow white, homogeneous</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1746,13 +2701,34 @@
             </div>
             <div class="spec-product">
               <div class="sp-name">Yellow Petroleum Jelly <span class="sp-grade">Technical Grade</span></div>
-              <div class="sp-desc">Industrial-grade yellow petrolatum for cable filling, corrosion protection, and grease compounding.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>Melting Point</td><td>40°C – 65°C</td></tr>
-                <tr><td>Penetration (@ 25°C)</td><td>100 – 300 (×0.1mm)</td></tr>
-                <tr><td>Sulphur Content</td><td>NMT 10 ppm</td></tr>
-                <tr><td>Oxidation Stability</td><td>Passes ASTM D942</td></tr>
-              </tbody></table>
+              <div class="sp-desc">Industrial-grade yellow petrolatum for cable filling, corrosion protection, and
+                grease compounding.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Melting Point</td>
+                    <td>40°C – 65°C</td>
+                  </tr>
+                  <tr>
+                    <td>Penetration (@ 25°C)</td>
+                    <td>100 – 300 (×0.1mm)</td>
+                  </tr>
+                  <tr>
+                    <td>Sulphur Content</td>
+                    <td>NMT 10 ppm</td>
+                  </tr>
+                  <tr>
+                    <td>Oxidation Stability</td>
+                    <td>Passes ASTM D942</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1760,13 +2736,34 @@
             </div>
             <div class="spec-product">
               <div class="sp-name">Snow White Jelly USP <span class="sp-grade">Ultra Refined</span></div>
-              <div class="sp-desc">Highest purity snow-white petrolatum for premium cosmetics, baby ointments, and ophthalmic preparations.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>Colour (Saybolt)</td><td>NLT +30 (Ultra White)</td></tr>
-                <tr><td>Melting Point</td><td>38°C – 56°C</td></tr>
-                <tr><td>UV Absorbance</td><td>Meets USP requirements</td></tr>
-                <tr><td>Polycyclic Aromatics</td><td>Absent (DMSO test)</td></tr>
-              </tbody></table>
+              <div class="sp-desc">Highest purity snow-white petrolatum for premium cosmetics, baby ointments, and
+                ophthalmic preparations.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Colour (Saybolt)</td>
+                    <td>NLT +30 (Ultra White)</td>
+                  </tr>
+                  <tr>
+                    <td>Melting Point</td>
+                    <td>38°C – 56°C</td>
+                  </tr>
+                  <tr>
+                    <td>UV Absorbance</td>
+                    <td>Meets USP requirements</td>
+                  </tr>
+                  <tr>
+                    <td>Polycyclic Aromatics</td>
+                    <td>Absent (DMSO test)</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1774,13 +2771,34 @@
             </div>
             <div class="spec-product">
               <div class="sp-name">Industrial Grade Jelly <span class="sp-grade">Heavy Duty</span></div>
-              <div class="sp-desc">High-melt-point petrolatum for industrial applications like cable jointing compound and rust preventive coatings.</div>
-              <table class="specs-table"><thead><tr><th>Parameter</th><th>Specification</th></tr></thead><tbody>
-                <tr><td>Melting Point</td><td>60°C – 80°C</td></tr>
-                <tr><td>Penetration (@ 25°C)</td><td>30 – 100 (×0.1mm)</td></tr>
-                <tr><td>Drop Point</td><td>NLT 80°C</td></tr>
-                <tr><td>Water Content</td><td>NMT 0.1 % m/m</td></tr>
-              </tbody></table>
+              <div class="sp-desc">High-melt-point petrolatum for industrial applications like cable jointing compound
+                and rust preventive coatings.</div>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Melting Point</td>
+                    <td>60°C – 80°C</td>
+                  </tr>
+                  <tr>
+                    <td>Penetration (@ 25°C)</td>
+                    <td>30 – 100 (×0.1mm)</td>
+                  </tr>
+                  <tr>
+                    <td>Drop Point</td>
+                    <td>NLT 80°C</td>
+                  </tr>
+                  <tr>
+                    <td>Water Content</td>
+                    <td>NMT 0.1 % m/m</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="sp-actions">
                 <a href="#contact" class="btn-sm btn-sm-primary">Request Quote</a>
                 <a href="#contact" class="btn-sm btn-sm-outline">Download COA</a>
@@ -1798,13 +2816,14 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-img-wrap">
-          <img
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800"
-            alt="Industrial petrochemical refinery plant infrastructure"
-            class="about-main-image"
-          >
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800"
+            alt="Industrial petrochemical refinery plant infrastructure" class="about-main-image">
           <div class="overlapping-info-card">
-            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg></div>
             <div class="card-number">REACH</div>
             <div class="card-label">Compliant Sourcing</div>
           </div>
@@ -1812,20 +2831,47 @@
         <div class="about-text-col animate-right">
           <div class="section-badge">Strategic Distribution Partner</div>
           <h2 class="section-title">Technical Sourcing &amp; Supply Authority</h2>
-          <p class="about-desc">SR Petrochem is a premier distribution and sourcing partner for refined white mineral oils, process fluids, transformer insulating oils, and petroleum jellies. We bridge the gap between high-capacity refining units and demanding industrial manufacturers.</p>
-          <p class="about-desc">Rather than just selling products, we build deep technical partnerships. We manage localized warehousing buffer stocks, coordinate multi-modal logistics, and certify every batch inside certified laboratories to ensure USP, BP, IP, and IEC compliance.</p>
+          <p class="about-desc">SR Petrochem is a premier distribution and sourcing partner for refined white mineral
+            oils, process fluids, transformer insulating oils, and petroleum jellies. We bridge the gap between
+            high-capacity refining units and demanding industrial manufacturers.</p>
+          <p class="about-desc">Rather than just selling products, we build deep technical partnerships. We manage
+            localized warehousing buffer stocks, coordinate multi-modal logistics, and certify every batch inside
+            certified laboratories to ensure USP, BP, IP, and IEC compliance.</p>
           <div class="about-values">
             <div class="value-row">
-              <div class="val-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
-              <div><div class="val-title">Uncompromising Quality Control</div><div class="val-text">All bulk deliveries are accompanied by batch-specific COAs, verified for viscosity, purity, and thermal stability.</div></div>
+              <div class="val-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg></div>
+              <div>
+                <div class="val-title">Uncompromising Quality Control</div>
+                <div class="val-text">All bulk deliveries are accompanied by batch-specific COAs, verified for
+                  viscosity, purity, and thermal stability.</div>
+              </div>
             </div>
             <div class="value-row">
-              <div class="val-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
-              <div><div class="val-title">Agile Sourcing Network</div><div class="val-text">We source directly from state-of-the-art refineries, negotiating bulk volumes to offer highly competitive pricing structures.</div></div>
+              <div class="val-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg></div>
+              <div>
+                <div class="val-title">Agile Sourcing Network</div>
+                <div class="val-text">We source directly from state-of-the-art refineries, negotiating bulk volumes to
+                  offer highly competitive pricing structures.</div>
+              </div>
             </div>
             <div class="value-row">
-              <div class="val-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-              <div><div class="val-title">Seamless Bulk Logistics</div><div class="val-text">Whether in Flexibags, ISO Tanks, or Barrels, we guarantee optimized supply chain scheduling and port dispatch.</div></div>
+              <div class="val-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg></div>
+              <div>
+                <div class="val-title">Seamless Bulk Logistics</div>
+                <div class="val-text">Whether in Flexibags, ISO Tanks, or Barrels, we guarantee optimized supply chain
+                  scheduling and port dispatch.</div>
+              </div>
             </div>
           </div>
         </div>
@@ -1839,11 +2885,13 @@
       <div class="section-header centered">
         <div class="section-badge">Industrial Sectors We Supply</div>
         <h2 class="section-title">Powering Key Industries</h2>
-        <p class="section-desc">From pharmaceutical-grade excipients to industrial machinery lubricants, we keep core industrial sectors moving.</p>
+        <p class="section-desc">From pharmaceutical-grade excipients to industrial machinery lubricants, we keep core
+          industrial sectors moving.</p>
       </div>
       <div class="industries-grid">
         <div class="ind-card">
-          <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=800" alt="Pharmaceutical manufacturing" class="ind-img">
+          <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=800"
+            alt="Pharmaceutical manufacturing" class="ind-img">
           <div class="ind-overlay">
             <div class="ind-name">Pharmaceuticals &amp; Cosmetics</div>
             <div class="ind-items">
@@ -1853,7 +2901,8 @@
           </div>
         </div>
         <div class="ind-card">
-          <img src="https://images.unsplash.com/photo-1621905252507-b354bc25edac?auto=format&fit=crop&q=80&w=800" alt="Power transmission infrastructure" class="ind-img">
+          <img src="https://images.unsplash.com/photo-1621905252507-b354bc25edac?auto=format&fit=crop&q=80&w=800"
+            alt="Power transmission infrastructure" class="ind-img">
           <div class="ind-overlay">
             <div class="ind-name">Power Transmission &amp; Energy</div>
             <div class="ind-items">
@@ -1863,7 +2912,8 @@
           </div>
         </div>
         <div class="ind-card">
-          <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&q=80&w=800" alt="Automotive industry" class="ind-img">
+          <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&q=80&w=800"
+            alt="Automotive industry" class="ind-img">
           <div class="ind-overlay">
             <div class="ind-name">Automotive &amp; Transportation</div>
             <div class="ind-items">
@@ -1873,7 +2923,8 @@
           </div>
         </div>
         <div class="ind-card">
-          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800" alt="Industrial manufacturing" class="ind-img">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800"
+            alt="Industrial manufacturing" class="ind-img">
           <div class="ind-overlay">
             <div class="ind-name">Manufacturing &amp; Process</div>
             <div class="ind-items">
@@ -1883,7 +2934,8 @@
           </div>
         </div>
         <div class="ind-card">
-          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800" alt="Construction industry" class="ind-img">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800"
+            alt="Construction industry" class="ind-img">
           <div class="ind-overlay">
             <div class="ind-name">Construction &amp; Infrastructure</div>
             <div class="ind-items">
@@ -1893,7 +2945,8 @@
           </div>
         </div>
         <div class="ind-card">
-          <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=800" alt="Food and packaging industry" class="ind-img">
+          <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=800"
+            alt="Food and packaging industry" class="ind-img">
           <div class="ind-overlay">
             <div class="ind-name">Food &amp; Packaging</div>
             <div class="ind-items">
@@ -1912,26 +2965,41 @@
       <div class="section-header centered">
         <div class="section-badge">Quality Assurance Framework</div>
         <h2 class="section-title">Rigorous Testing, Guaranteed Compliance</h2>
-        <p class="section-desc">We maintain absolute technical oversight. Every single batch is laboratory-tested to ensure conformity with international B2B quality standards.</p>
+        <p class="section-desc">We maintain absolute technical oversight. Every single batch is laboratory-tested to
+          ensure conformity with international B2B quality standards.</p>
       </div>
       <div class="quality-grid">
         <div class="q-card">
-          <div class="q-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <div class="q-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg></div>
           <div class="q-title">Batch-Specific COA</div>
-          <div class="q-text">Every commercial bulk dispatch is accompanied by an official Certificate of Analysis. We test for viscosity profiles, flash points, pour points, and purity indices.</div>
+          <div class="q-text">Every commercial bulk dispatch is accompanied by an official Certificate of Analysis. We
+            test for viscosity profiles, flash points, pour points, and purity indices.</div>
         </div>
         <div class="q-card">
-          <div class="q-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 9.172V5L8 4z"/></svg></div>
+          <div class="q-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 9.172V5L8 4z" />
+            </svg></div>
           <div class="q-title">Standard Regulatory Conformity</div>
-          <div class="q-text">All liquid paraffins and jellies align strictly with pharmacopoeia standards (USP, BP, IP, Ph. Eur.) and industrial regulations (REACH, FDA sourcing frameworks).</div>
+          <div class="q-text">All liquid paraffins and jellies align strictly with pharmacopoeia standards (USP, BP, IP,
+            Ph. Eur.) and industrial regulations (REACH, FDA sourcing frameworks).</div>
         </div>
         <div class="q-card">
-          <div class="q-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg></div>
+          <div class="q-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+            </svg></div>
           <div class="q-title">Third-Party Inspections</div>
-          <div class="q-text">We welcome independent pre-shipment inspections and facilitate third-party laboratory verification (SGS or Intertek) at port terminals prior to vessel loading.</div>
+          <div class="q-text">We welcome independent pre-shipment inspections and facilitate third-party laboratory
+            verification (SGS or Intertek) at port terminals prior to vessel loading.</div>
         </div>
 
-    </div>
+      </div>
   </section>
 
   <!-- ========== CONTACT / QUOTE SECTION ========== -->
@@ -1942,24 +3010,43 @@
         <div>
           <div class="contact-tag">B2B Sourcing Desk</div>
           <h2 class="contact-title">Partner with SR Petrochem</h2>
-          <p class="contact-desc">Speak directly with our specialized trade logistics officers to arrange bulk volume scheduling, customized product specifications, and specialized delivery solutions.</p>
+          <p class="contact-desc">Speak directly with our specialized trade logistics officers to arrange bulk volume
+            scheduling, customized product specifications, and specialized delivery solutions.</p>
           <div class="contact-methods">
             <div class="contact-method">
-              <div class="cm-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div>
-              <div><div class="cm-label">WhatsApp / Sourcing Desk</div><div class="cm-value"><a href="https://wa.me/919082181794" target="_blank">+91 90821 81794</a></div></div>
+              <div class="cm-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg></div>
+              <div>
+                <div class="cm-label">WhatsApp / Sourcing Desk</div>
+                <div class="cm-value"><a href="https://wa.me/919082181794" target="_blank">+91 90821 81794</a></div>
+              </div>
             </div>
             <div class="contact-method">
-              <div class="cm-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
-              <div><div class="cm-label">Corporate Sourcing Desk</div><div class="cm-value"><a href="mailto:srpetrochembz@gmail.com">srpetrochembz@gmail.com</a></div></div>
+              <div class="cm-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg></div>
+              <div>
+                <div class="cm-label">Corporate Sourcing Desk</div>
+                <div class="cm-value"><a href="mailto:srpetrochembz@gmail.com">srpetrochembz@gmail.com</a></div>
+              </div>
             </div>
             <div class="contact-method">
-              <div class="cm-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg></div>
-              <div><div class="cm-label">Primary Trade Office</div><div class="cm-value">Plot no-180, S-12, Opp Total Sports, Sector-11, Vashi, Thane, Maharashtra - 400703</div></div>
+              <div class="cm-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg></div>
+              <div>
+                <div class="cm-label">Primary Trade Office</div>
+                <div class="cm-value">Plot no-180, S-12, Opp Total Sports, Sector-11, Vashi, Thane, Maharashtra - 400703
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="trade-desk-status">
-            <span class="status-dot"></span>
-            <span class="status-text">Trade Desk Active: Mon-Sat (9:00 AM - 6:00 PM IST)</span>
           </div>
         </div>
 
@@ -1967,7 +3054,8 @@
         <div class="form-box">
           <div id="form-area">
             <div class="form-box-title">Request a Bulk Quote</div>
-            <p class="form-box-sub">Complete the specification sheet below. Our trade desk will reply with a pro-forma estimate within 12 business hours.</p>
+            <p class="form-box-sub">Complete the specification sheet below. Our trade desk will reply with a pro-forma
+              estimate within 12 business hours.</p>
             <form id="inquiry-form" novalidate>
               <div class="form-row">
                 <div class="form-group">
@@ -2024,21 +3112,30 @@
               <div class="form-row single">
                 <div class="form-group">
                   <label for="f-notes">Sourcing Notes &amp; Special Requirements</label>
-                  <textarea id="f-notes" name="notes" placeholder="Detail any custom viscosity requirements, packaging preferences, or delivery schedule constraints..."></textarea>
+                  <textarea id="f-notes" name="notes"
+                    placeholder="Detail any custom viscosity requirements, packaging preferences, or delivery schedule constraints..."></textarea>
                 </div>
               </div>
               <button type="submit" class="btn btn-submit" id="submit-btn">
                 Request Sourcing Quote
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor"
+                  stroke-width="2.5" viewBox="0 0 24 24">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
               </button>
             </form>
           </div>
           <div class="form-success" id="form-success">
             <div class="success-check">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
             </div>
             <div class="success-title">Sourcing Request Received!</div>
-            <p class="success-text">Your technical bulk inquiry has been transmitted to our logistics desk. A specialist will contact you with pricing details within 12 business hours.</p>
+            <p class="success-text">Your technical bulk inquiry has been transmitted to our logistics desk. A specialist
+              will contact you with pricing details within 12 business hours.</p>
             <button class="btn btn-outline-dark" id="reset-btn">Submit Another Enquiry</button>
           </div>
         </div>
@@ -2055,33 +3152,43 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="44" height="44" aria-hidden="true">
             <defs>
               <linearGradient id="ft-drop" x1="100%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#00BAC6"/>
-                <stop offset="100%" stop-color="#1E2D5A"/>
+                <stop offset="0%" stop-color="#00BAC6" />
+                <stop offset="100%" stop-color="#1E2D5A" />
               </linearGradient>
               <linearGradient id="ft-leaf" x1="100%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#A5DB3C"/>
-                <stop offset="100%" stop-color="#8EC63F"/>
+                <stop offset="0%" stop-color="#A5DB3C" />
+                <stop offset="100%" stop-color="#8EC63F" />
               </linearGradient>
             </defs>
-            <path d="M 100,30 C 112,45 160,95 160,135 A 60,60 0 0,1 40,135 C 40,95 88,45 100,30 Z" fill="url(#ft-drop)"/>
-            <path d="M 54,115 C 49,130 52,150 72,166" stroke="white" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.9"/>
-            <polygon points="100,30 112,30 87,110 117,130 95,185 85,185 105,130 75,110" fill="white"/>
-            <path d="M 106,95 C 92,70 120,30 165,20 C 158,55 135,88 106,95 Z" fill="white" stroke="white" stroke-width="8" stroke-linejoin="round"/>
-            <path d="M 106,95 C 92,70 120,30 165,20 C 158,55 135,88 106,95 Z" fill="url(#ft-leaf)"/>
-            <path d="M 106,95 Q 130,60 165,20" stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+            <path d="M 100,30 C 112,45 160,95 160,135 A 60,60 0 0,1 40,135 C 40,95 88,45 100,30 Z"
+              fill="url(#ft-drop)" />
+            <path d="M 54,115 C 49,130 52,150 72,166" stroke="white" stroke-width="5" stroke-linecap="round" fill="none"
+              opacity="0.9" />
+            <polygon points="100,30 112,30 87,110 117,130 95,185 85,185 105,130 75,110" fill="white" />
+            <path d="M 106,95 C 92,70 120,30 165,20 C 158,55 135,88 106,95 Z" fill="white" stroke="white"
+              stroke-width="8" stroke-linejoin="round" />
+            <path d="M 106,95 C 92,70 120,30 165,20 C 158,55 135,88 106,95 Z" fill="url(#ft-leaf)" />
+            <path d="M 106,95 Q 130,60 165,20" stroke="white" stroke-width="4" stroke-linecap="round" fill="none" />
           </svg>
           <div class="logo-brand">
             <div class="logo-name" style="color:#fff;">SR PETROCHEM</div>
             <div class="logo-tag">Innovation in Energy &amp; Materials</div>
           </div>
         </a>
-        <p class="footer-tagline">Technical authority in petrochemical distribution. Supplying compliant bulk industrial oils, liquid paraffins, and specialized jellies to industrial markets.</p>
+        <p class="footer-tagline">Technical authority in petrochemical distribution. Supplying compliant bulk industrial
+          oils, liquid paraffins, and specialized jellies to industrial markets.</p>
         <div class="social-row">
           <a href="#" class="social-btn" aria-label="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
           </a>
           <a href="#" class="social-btn" aria-label="Twitter/X">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+            </svg>
           </a>
         </div>
       </div>
@@ -2127,11 +3234,19 @@
         </div>
         <div class="footer-contact">
           <a href="https://wa.me/919082181794" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
             +91 90821 81794
           </a>
           <a href="mailto:srpetrochembz@gmail.com">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
             srpetrochembz@gmail.com
           </a>
         </div>
@@ -2139,7 +3254,8 @@
     </div>
 
     <div class="footer-bottom">
-      <div class="footer-copy">&copy; 2026 SR Petrochem. All Rights Reserved. Sourced responsibly, engineered for performance.</div>
+      <div class="footer-copy">&copy; 2026 SR Petrochem. All Rights Reserved. Sourced responsibly, engineered for
+        performance.</div>
       <div class="footer-legal">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Bulk Trade</a>
@@ -2183,8 +3299,8 @@
     // Close on outside click
     document.addEventListener('click', (e) => {
       if (mobileNav.classList.contains('open') &&
-          !mobileNav.contains(e.target) &&
-          !hamburger.contains(e.target)) {
+        !mobileNav.contains(e.target) &&
+        !hamburger.contains(e.target)) {
         mobileNav.classList.remove('open');
         hamburger.classList.remove('open');
         hamburger.setAttribute('aria-expanded', 'false');
@@ -2195,7 +3311,7 @@
     // =========================================
     // SCROLL SPY – Active nav link highlight
     // =========================================
-    const spySections = ['hero','about','products','industries','quality','contact'];
+    const spySections = ['hero', 'about', 'products', 'industries', 'quality', 'contact'];
     const navLinks = document.querySelectorAll('.nav a');
 
     const updateActiveLink = () => {
@@ -2341,53 +3457,53 @@
       submitBtn.disabled = true;
       submitBtn.innerHTML = 'Sending Quote Request...';
 
-       // Gather data
-       const formData = new FormData(form);
-       const data = {};
-       formData.forEach((value, key) => {
-         data[key] = value;
-       });
-       
-       // Structure data beautifully for the email table format
-       const emailPayload = {
-         "Full Name": data['name'],
-         "Business Email": data['email'],
-         "Company Name": data['company'],
-         "Destination Port/Country": data['destination'],
-         "Product Category": data['category'] ? data['category'].replace('-', ' ').toUpperCase() : '',
-         "Target Grade / Specification": data['grade'],
-         "Sourcing Quantity": `${data['quantity']} ${data['unit'] === 'mt' ? 'Metric Tons (MT)' : data['unit'].toUpperCase()}`,
-         "Special Sourcing Notes & Logistic Terms": data['notes'] || 'None provided',
-         "_subject": 'New B2B Bulk Sourcing Quote Request - SR Petrochem',
-         "_captcha": 'false',
-         "_template": 'table',
-         "_replyto": data['email']
-       };
+      // Gather data
+      const formData = new FormData(form);
+      const data = {};
+      formData.forEach((value, key) => {
+        data[key] = value;
+      });
 
-       fetch('https://formsubmit.co/ajax/srpetrochembz@gmail.com', {
-         method: 'POST',
-         headers: {
-           'Content-Type': 'application/json',
-           'Accept': 'application/json'
-         },
-         body: JSON.stringify(emailPayload)
-       })
-       .then(response => response.json())
-       .then(res => {
-         submitBtn.disabled = false;
-         submitBtn.innerHTML = originalText;
-         // Show success
-         formArea.style.display = 'none';
-         formSuccess.classList.add('show');
-       })
-       .catch(err => {
-         console.error('Submission error:', err);
-         submitBtn.disabled = false;
-         submitBtn.innerHTML = originalText;
-         // Show success overlay in prototype even on failure
-         formArea.style.display = 'none';
-         formSuccess.classList.add('show');
-       });
+      // Structure data beautifully for the email table format
+      const emailPayload = {
+        "Full Name": data['name'],
+        "Business Email": data['email'],
+        "Company Name": data['company'],
+        "Destination Port/Country": data['destination'],
+        "Product Category": data['category'] ? data['category'].replace('-', ' ').toUpperCase() : '',
+        "Target Grade / Specification": data['grade'],
+        "Sourcing Quantity": `${data['quantity']} ${data['unit'] === 'mt' ? 'Metric Tons (MT)' : data['unit'].toUpperCase()}`,
+        "Special Sourcing Notes & Logistic Terms": data['notes'] || 'None provided',
+        "_subject": 'New B2B Bulk Sourcing Quote Request - SR Petrochem',
+        "_captcha": 'false',
+        "_template": 'table',
+        "_replyto": data['email']
+      };
+
+      fetch('https://formsubmit.co/ajax/srpetrochembz@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(emailPayload)
+      })
+        .then(response => response.json())
+        .then(res => {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalText;
+          // Show success
+          formArea.style.display = 'none';
+          formSuccess.classList.add('show');
+        })
+        .catch(err => {
+          console.error('Submission error:', err);
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalText;
+          // Show success overlay in prototype even on failure
+          formArea.style.display = 'none';
+          formSuccess.classList.add('show');
+        });
     });
 
     resetBtn.addEventListener('click', () => {
@@ -2410,18 +3526,18 @@
   </script>
   <!-- Floating WhatsApp Business Widget -->
   <!-- CONFIGURATION: To change the WhatsApp phone number, replace "919082181794" in the link below with your client's country code + phone number (no spaces, plus signs, or dashes). -->
-  <a href="https://wa.me/919082181794?text=Hello%20SR%20Petrochem%20Team%2C%20I%20am%20interested%20in%20sourcing%20chemical%2Fpetroleum%20products.%0A%0AHere%20are%20my%20inquiry%20details%3A%0A-%20Company%20Name%3A%20%0A-%20Required%20Product%2FGrade%3A%20%0A-%20Estimated%20Volume%20%28Tons%2FBarrels%29%3A%20" 
-     class="whatsapp-float-widget" 
-     target="_blank" 
-     rel="noopener noreferrer" 
-     aria-label="Chat with SR Petrochem Sourcing Desk on WhatsApp">
-     <div class="whatsapp-badge">Chat with Sales</div>
-     <div class="whatsapp-icon-wrapper">
-       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" class="whatsapp-svg">
-         <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.7-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-       </svg>
-     </div>
+  <a href="https://wa.me/919082181794?text=Hello%20SR%20Petrochem%20Team%2C%20I%20am%20interested%20in%20sourcing%20chemical%2Fpetroleum%20products.%0A%0AHere%20are%20my%20inquiry%20details%3A%0A-%20Company%20Name%3A%20%0A-%20Required%20Product%2FGrade%3A%20%0A-%20Estimated%20Volume%20%28Tons%2FBarrels%29%3A%20"
+    class="whatsapp-float-widget" target="_blank" rel="noopener noreferrer"
+    aria-label="Chat with SR Petrochem Sourcing Desk on WhatsApp">
+    <div class="whatsapp-badge">Chat with Sales</div>
+    <div class="whatsapp-icon-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" class="whatsapp-svg">
+        <path
+          d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.7-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+      </svg>
+    </div>
   </a>
 
 </body>
+
 </html>
