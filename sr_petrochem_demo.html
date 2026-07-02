@@ -1757,138 +1757,109 @@
       }
 
       /* ==========================================================================
-       FLOATING WHATSAPP BUSINESS WIDGET
-       ========================================================================== */
-      .whatsapp-float-widget {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        z-index: 9999;
-        text-decoration: none;
-        font-family: 'Outfit', 'Inter', sans-serif;
-        opacity: 0;
-        transform: translateY(20px);
-        animation: whatsappEntry 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        animation-delay: 1.5s;
-      }
-
-      .whatsapp-icon-wrapper {
-        width: 60px;
-        height: 60px;
-        background-color: #25D366;
-        color: #ffffff;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4),
-          inset 0 -4px 0 rgba(0, 0, 0, 0.15),
-          0 0 0 0px rgba(37, 211, 102, 0.4);
-        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+         REFINE LIVE FEED VIDEO MONITOR
+         ========================================================================== */
+      .video-container {
         position: relative;
-        animation: whatsappPulse 2s infinite;
+        width: 100%;
+        height: 480px;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        border: 4px solid var(--primary-dark);
+        box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+        background-color: #000;
+        z-index: 10;
       }
 
-      .whatsapp-svg {
-        width: 30px;
-        height: 30px;
-        transition: transform 0.3s ease;
+      .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1.25rem 1.5rem;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 5;
+        font-family: var(--font-headings);
       }
 
-      .whatsapp-badge {
-        background-color: #1E2D5A;
-        color: #ffffff;
-        padding: 8px 16px;
-        border-radius: 30px;
-        font-size: 0.9rem;
+      .video-status {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .status-dot {
+        width: 10px;
+        height: 10px;
+        background-color: #EF4444;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #EF4444;
+        animation: videoDotFlash 1.5s step-end infinite;
+      }
+
+      @keyframes videoDotFlash {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      .status-text {
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .video-timestamp {
+        font-size: 0.85rem;
         font-weight: 600;
-        box-shadow: 0 4px 12px rgba(30, 45, 90, 0.15);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        white-space: nowrap;
-        pointer-events: none;
-        opacity: 0.9;
-        transform: translateX(10px);
-        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        color: #fff;
+        letter-spacing: 0.05em;
+        font-family: monospace;
       }
 
-      /* Hover States */
-      .whatsapp-float-widget:hover .whatsapp-icon-wrapper {
-        background-color: #20ba59;
-        transform: scale(1.08);
-        box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5),
-          inset 0 -4px 0 rgba(0, 0, 0, 0.15),
-          0 0 0 10px rgba(37, 211, 102, 0);
-        animation: none;
+      .video-feed-wrapper {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
       }
 
-      .whatsapp-float-widget:hover .whatsapp-svg {
-        transform: rotate(10deg) scale(1.1);
+      .video-feed-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        animation: videoFeedPan 25s ease-in-out infinite;
       }
 
-      .whatsapp-float-widget:hover .whatsapp-badge {
-        opacity: 1;
-        transform: translateX(0);
-        background-color: #00BAC6;
-        box-shadow: 0 6px 16px rgba(0, 186, 198, 0.3);
-      }
-
-      /* Animations */
-      @keyframes whatsappEntry {
+      @keyframes videoFeedPan {
         0% {
-          opacity: 0;
-          transform: translateY(30px);
+          transform: scale(1.05) translate(0, 0);
         }
-
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes whatsappPulse {
-        0% {
-          box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4),
-            inset 0 -4px 0 rgba(0, 0, 0, 0.15),
-            0 0 0 0px rgba(37, 211, 102, 0.5);
-        }
-
         50% {
-          box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4),
-            inset 0 -4px 0 rgba(0, 0, 0, 0.15),
-            0 0 0 15px rgba(37, 211, 102, 0);
+          transform: scale(1.18) translate(-1.5%, -1%);
         }
-
         100% {
-          box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4),
-            inset 0 -4px 0 rgba(0, 0, 0, 0.15),
-            0 0 0 0px rgba(37, 211, 102, 0);
+          transform: scale(1.05) translate(0, 0);
         }
       }
 
-      /* Responsive Overrides */
-      @media (max-width: 768px) {
-        .whatsapp-float-widget {
-          bottom: 20px;
-          right: 20px;
-          gap: 0;
-        }
-
-        .whatsapp-icon-wrapper {
-          width: 55px;
-          height: 55px;
-        }
-
-        .whatsapp-svg {
-          width: 26px;
-          height: 26px;
-        }
-
-        .whatsapp-badge {
-          display: none;
-        }
+      .video-scanlines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          rgba(18, 16, 16, 0) 50%, 
+          rgba(0, 0, 0, 0.12) 50%
+        );
+        background-size: 100% 4px;
+        z-index: 4;
+        pointer-events: none;
+        opacity: 0.75;
       }
   </style>
 </head>
@@ -2815,18 +2786,18 @@
   <section class="about-section" id="about">
     <div class="container">
       <div class="about-grid">
-        <div class="about-img-wrap">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800"
-            alt="Industrial petrochemical refinery plant infrastructure" class="about-main-image">
-          <div class="overlapping-info-card">
-            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-              </svg></div>
-            <div class="card-number">REACH</div>
-            <div class="card-label">Compliant Sourcing</div>
+        <div class="video-container">
+          <div class="video-overlay">
+            <div class="video-status">
+              <span class="status-dot"></span>
+              <span class="status-text">LIVE PROCESS FEED - UNIT 4</span>
+            </div>
+            <div class="video-timestamp" id="about-video-time">00:00:00</div>
           </div>
+          <div class="video-feed-wrapper">
+            <img src="images/refinery-live.jpg" alt="Refinery Plant Distillation Loop" class="video-feed-image">
+          </div>
+          <div class="video-scanlines"></div>
         </div>
         <div class="about-text-col animate-right">
           <div class="section-badge">Strategic Distribution Partner</div>
@@ -3013,17 +2984,6 @@
           <p class="contact-desc">Speak directly with our specialized trade logistics officers to arrange bulk volume
             scheduling, customized product specifications, and specialized delivery solutions.</p>
           <div class="contact-methods">
-            <div class="contact-method">
-              <div class="cm-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg></div>
-              <div>
-                <div class="cm-label">WhatsApp / Sourcing Desk</div>
-                <div class="cm-value"><a href="https://wa.me/919082181794" target="_blank">+91 90821 81794</a></div>
-              </div>
-            </div>
             <div class="contact-method">
               <div class="cm-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" stroke-width="2">
@@ -3233,14 +3193,6 @@
           GSTIN: 27CHDPP3568C1ZA
         </div>
         <div class="footer-contact">
-          <a href="https://wa.me/919082181794" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-              stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-            </svg>
-            +91 90821 81794
-          </a>
           <a href="mailto:srpetrochembz@gmail.com">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
               stroke-width="2">
@@ -3524,19 +3476,21 @@
     };
     setInterval(cycleDots, 4000);
   </script>
-  <!-- Floating WhatsApp Business Widget -->
-  <!-- CONFIGURATION: To change the WhatsApp phone number, replace "919082181794" in the link below with your client's country code + phone number (no spaces, plus signs, or dashes). -->
-  <a href="https://wa.me/919082181794?text=Hello%20SR%20Petrochem%20Team%2C%20I%20am%20interested%20in%20sourcing%20chemical%2Fpetroleum%20products.%0A%0AHere%20are%20my%20inquiry%20details%3A%0A-%20Company%20Name%3A%20%0A-%20Required%20Product%2FGrade%3A%20%0A-%20Estimated%20Volume%20%28Tons%2FBarrels%29%3A%20"
-    class="whatsapp-float-widget" target="_blank" rel="noopener noreferrer"
-    aria-label="Chat with SR Petrochem Sourcing Desk on WhatsApp">
-    <div class="whatsapp-badge">Chat with Sales</div>
-    <div class="whatsapp-icon-wrapper">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" class="whatsapp-svg">
-        <path
-          d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.7-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
-      </svg>
-    </div>
-  </a>
+  <script>
+    // --- Live Video Feed Clock Timer ---
+    const videoClock = document.getElementById("about-video-time");
+    if (videoClock) {
+      const updateVideoClock = () => {
+        const now = new Date();
+        const hrs = String(now.getHours()).padStart(2, '0');
+        const mins = String(now.getMinutes()).padStart(2, '0');
+        const secs = String(now.getSeconds()).padStart(2, '0');
+        videoClock.textContent = `${hrs}:${mins}:${secs}`;
+      };
+      updateVideoClock();
+      setInterval(updateVideoClock, 1000);
+    }
+  </script>
 
 </body>
 

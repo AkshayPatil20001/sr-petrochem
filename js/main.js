@@ -376,6 +376,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", updateActiveNavLink);
   updateActiveNavLink(); // Run on load
+
+  // --- Live Video Feed Clock Timer ---
+  const videoClock = document.getElementById("about-video-time");
+  if (videoClock) {
+    const updateVideoClock = () => {
+      const now = new Date();
+      const hrs = String(now.getHours()).padStart(2, '0');
+      const mins = String(now.getMinutes()).padStart(2, '0');
+      const secs = String(now.getSeconds()).padStart(2, '0');
+      videoClock.textContent = `${hrs}:${mins}:${secs}`;
+    };
+    updateVideoClock();
+    setInterval(updateVideoClock, 1000);
+  }
 });
 
 
